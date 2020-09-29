@@ -148,10 +148,10 @@ This is where you will typically need to use Git from the command line.  After s
 ```
 # Get all of the latest from upstream for all branches
 git fetch upstream
-# Now make sure you're on main - the main branch for this project
-git checkout main
+# Now make sure you're on vnext branch of the solution you are contributing to
+git checkout SolutionName-Major-Minor
 # Merge in the changes from upstream (note: this commits locally)
-git merge upstream/main
+git merge upstream/SolutionName-Major-Minor
 # And then push those to your fork on GitHub
 git push
 ```
