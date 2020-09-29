@@ -12,7 +12,7 @@ Here's a quick summary of how to use the GitHub Flow to contribute to a Solution
 + Follow the instructions in the [**Setting up the DevOps Starter Kit**](/devops-setup.md) guide
     + This provides tools to help make your Power Platform development loop more productive
 + Use the *PowerOps for Azure DevOps* app to help you
-    + Get the latest code deployed to your development environment
+    + Get the latest *Solution* deployed to your development environment
     + Author your contributions
     + Create a branch in your fork of the repository based off the current code in the *vnext* branch
     + Commit your changes to your working branch
