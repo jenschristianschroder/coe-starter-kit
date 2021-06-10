@@ -1,0 +1,8 @@
+[
+  {
+    "IsSampleData": false,
+    "IsWritable": true,
+    "Name": "col_connectors_fromAPI",
+    "Type": "CollectionDataSourceInfo"
+  }
+]
