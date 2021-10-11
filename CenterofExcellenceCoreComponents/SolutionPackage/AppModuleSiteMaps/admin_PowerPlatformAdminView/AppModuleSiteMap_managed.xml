@@ -1,6 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <AppModuleSiteMap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SiteMapUniqueName>admin_PowerPlatformAdminView</SiteMapUniqueName>
+  <EnableCollapsibleGroups>False</EnableCollapsibleGroups>
+  <ShowHome>True</ShowHome>
+  <ShowPinned>True</ShowPinned>
+  <ShowRecents>True</ShowRecents>
   <SiteMap IntroducedVersion="7.0.0.0">
     <Area Id="New_Area" ResourceId="SitemapDesigner.NewArea" DescriptionResourceId="SitemapDesigner.NewArea" ShowGroups="true" IntroducedVersion="7.0.0.0">
       <Titles>
@@ -18,6 +22,11 @@
         <SubArea Id="New_SubArea" VectorIcon="/WebResources/admin_PowerAppIcon" Icon="/_imgs/imagestrips/transparent_spacer.gif" IntroducedVersion="7.0.0.0" Entity="admin_app" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
           <Titles>
             <Title LCID="1033" Title="Apps" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="NewSubArea_3a8ead6e" VectorIcon="/WebResources/admin_PortalIcon" Icon="/WebResources/admin_PortalIcon" Entity="admin_portal" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Portals" />
           </Titles>
         </SubArea>
         <SubArea Id="NewSubArea_036248ed" VectorIcon="/WebResources/admin_FlowIcon" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="admin_flow" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
@@ -45,16 +54,6 @@
         </Titles>
         <SubArea Id="NewSubArea_4b21725f" VectorIcon="/WebResources/admin_userIcon" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="admin_maker" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
         <SubArea Id="NewSubArea_f5b05a57" VectorIcon="/WebResources/admin_UsersIcon" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="admin_powerplatformuser" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
-      </Group>
-      <Group Id="NewGroup_4637f9" ResourceId="SitemapDesigner.NewGroup" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown">
-        <Titles>
-          <Title LCID="1033" Title="CoE Settings" />
-        </Titles>
-        <SubArea Id="NewSubArea_17a86ca" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="admin_coesettings" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
-          <Titles>
-            <Title LCID="1033" Title="Configure" />
-          </Titles>
-        </SubArea>
       </Group>
     </Area>
   </SiteMap>

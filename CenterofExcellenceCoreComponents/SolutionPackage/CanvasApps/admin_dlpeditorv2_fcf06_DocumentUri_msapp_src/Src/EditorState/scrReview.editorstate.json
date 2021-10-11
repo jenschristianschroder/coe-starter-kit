@@ -87,7 +87,8 @@
         "IsLockable": false,
         "NameMapSourceSchema": "?"
       },
-      "OnSelect"
+      "OnSelect",
+      "ContentLanguage"
     ],
     "DynamicProperties": [
       {
@@ -132,18 +133,6 @@
           "RuleProviderType": "Unknown"
         },
         "PropertyName": "LayoutMinHeight"
-      },
-      {
-        "PropertyName": "LayoutX"
-      },
-      {
-        "PropertyName": "LayoutY"
-      },
-      {
-        "PropertyName": "LayoutWidth"
-      },
-      {
-        "PropertyName": "LayoutHeight"
       }
     ],
     "HasDynamicProperties": true,
@@ -162,6 +151,11 @@
       {
         "Category": "Data",
         "PropertyName": "Text",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "ContentLanguage",
         "RuleProviderType": "Unknown"
       },
       {
@@ -400,8 +394,16 @@
       "Italic",
       "Underline",
       "Strikethrough",
-      "OnSelect",
-      "Visible"
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "Set(\n    response,\n    If(\n        varPolicyMode = \"Update\",\n        PowerPlatformforAdmins.UpdatePolicyV2(\n            galDLPPolicies.Selected.name,\n            {\n                'api-version': \"2020-10-01\",\n                displayName: varPolicyName,\n                defaultConnectorsClassification: galDLPPolicies.Selected.defaultConnectorsClassification,\n                connectorGroups: col_connectorGroups,\n                environmentType: drpPolicyScope.Selected.value,\n                environments: col_environmentsInPolicy\n            }\n        ),\n        PowerPlatformforAdmins.CreatePolicyV2(\n            {\n                displayName: varPolicyName,\n                defaultConnectorsClassification: galDLPPolicies.Selected.defaultConnectorsClassification,\n                connectorGroups: col_connectorGroups,\n                environmentType: drpPolicyScope.Selected.value,\n                environments: col_environmentsInPolicy\n            }\n        )\n    )\n);\n",
+        "InvariantPropertyName": "OnSelect",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
+      "Visible",
+      "ContentLanguage"
     ],
     "DynamicProperties": [
       {
@@ -446,18 +448,6 @@
           "RuleProviderType": "Unknown"
         },
         "PropertyName": "LayoutMinHeight"
-      },
-      {
-        "PropertyName": "LayoutX"
-      },
-      {
-        "PropertyName": "LayoutY"
-      },
-      {
-        "PropertyName": "LayoutWidth"
-      },
-      {
-        "PropertyName": "LayoutHeight"
       }
     ],
     "HasDynamicProperties": true,
@@ -477,6 +467,11 @@
         "Category": "Data",
         "PropertyName": "Text",
         "RuleProviderType": "User"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "ContentLanguage",
+        "RuleProviderType": "Unknown"
       },
       {
         "Category": "Design",
@@ -656,7 +651,7 @@
       {
         "Category": "Behavior",
         "PropertyName": "OnSelect",
-        "RuleProviderType": "User"
+        "RuleProviderType": "Unknown"
       }
     ],
     "StyleName": "defaultButtonStyle",
@@ -728,8 +723,16 @@
       "Italic",
       "Underline",
       "Strikethrough",
-      "OnSelect",
-      "Visible"
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "Set(\r\n    response,\r\n    If(\r\n        varPolicyMode = \"Update\",\r\n        PowerPlatformforAdmins.UpdatePolicyV2(\r\n            galDLPPolicies.Selected.name,\r\n            {\r\n                'api-version': \"2020-10-01\",\r\n                displayName: varPolicyName,\r\n                defaultConnectorsClassification: galDLPPolicies.Selected.defaultConnectorsClassification,\r\n                connectorGroups: col_connectorGroups,\r\n                environmentType: drpPolicyScope.Selected.value,\r\n                environments: First(col_environmentsInPolicy)\r\n            }\r\n        ),\r\n        PowerPlatformforAdmins.CreatePolicyV2(\r\n            {\r\n                displayName: varPolicyName,\r\n                defaultConnectorsClassification: galDLPPolicies.Selected.defaultConnectorsClassification,\r\n                connectorGroups: col_connectorGroups,\r\n                environmentType: drpPolicyScope.Selected.value,\r\n                environments: First(col_environmentsInPolicy)\r\n            }\r\n        )\r\n    )\r\n);\r\n",
+        "InvariantPropertyName": "OnSelect",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
+      "Visible",
+      "ContentLanguage"
     ],
     "DynamicProperties": [
       {
@@ -774,18 +777,6 @@
           "RuleProviderType": "Unknown"
         },
         "PropertyName": "LayoutMinHeight"
-      },
-      {
-        "PropertyName": "LayoutX"
-      },
-      {
-        "PropertyName": "LayoutY"
-      },
-      {
-        "PropertyName": "LayoutWidth"
-      },
-      {
-        "PropertyName": "LayoutHeight"
       }
     ],
     "HasDynamicProperties": true,
@@ -805,6 +796,11 @@
         "Category": "Data",
         "PropertyName": "Text",
         "RuleProviderType": "User"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "ContentLanguage",
+        "RuleProviderType": "Unknown"
       },
       {
         "Category": "Design",
@@ -984,7 +980,7 @@
       {
         "Category": "Behavior",
         "PropertyName": "OnSelect",
-        "RuleProviderType": "User"
+        "RuleProviderType": "Unknown"
       }
     ],
     "StyleName": "defaultButtonStyle",
@@ -1058,18 +1054,6 @@
           "RuleProviderType": "Unknown"
         },
         "PropertyName": "LayoutMinHeight"
-      },
-      {
-        "PropertyName": "LayoutX"
-      },
-      {
-        "PropertyName": "LayoutY"
-      },
-      {
-        "PropertyName": "LayoutWidth"
-      },
-      {
-        "PropertyName": "LayoutHeight"
       }
     ],
     "HasDynamicProperties": true,
@@ -1201,18 +1185,6 @@
           "RuleProviderType": "Unknown"
         },
         "PropertyName": "LayoutMinHeight"
-      },
-      {
-        "PropertyName": "LayoutX"
-      },
-      {
-        "PropertyName": "LayoutY"
-      },
-      {
-        "PropertyName": "LayoutWidth"
-      },
-      {
-        "PropertyName": "LayoutHeight"
       }
     ],
     "HasDynamicProperties": true,
@@ -1404,18 +1376,6 @@
           "RuleProviderType": "Unknown"
         },
         "PropertyName": "LayoutMinHeight"
-      },
-      {
-        "PropertyName": "LayoutX"
-      },
-      {
-        "PropertyName": "LayoutY"
-      },
-      {
-        "PropertyName": "LayoutWidth"
-      },
-      {
-        "PropertyName": "LayoutHeight"
       }
     ],
     "HasDynamicProperties": true,
@@ -1608,18 +1568,6 @@
           "RuleProviderType": "Unknown"
         },
         "PropertyName": "LayoutMinHeight"
-      },
-      {
-        "PropertyName": "LayoutX"
-      },
-      {
-        "PropertyName": "LayoutY"
-      },
-      {
-        "PropertyName": "LayoutWidth"
-      },
-      {
-        "PropertyName": "LayoutHeight"
       }
     ],
     "HasDynamicProperties": true,
@@ -1776,7 +1724,8 @@
       "TabIndex",
       "FocusedBorderColor",
       "FocusedBorderThickness",
-      "Visible"
+      "Visible",
+      "ContentLanguage"
     ],
     "DynamicProperties": [
       {
@@ -1821,18 +1770,6 @@
           "RuleProviderType": "Unknown"
         },
         "PropertyName": "LayoutMinHeight"
-      },
-      {
-        "PropertyName": "LayoutX"
-      },
-      {
-        "PropertyName": "LayoutY"
-      },
-      {
-        "PropertyName": "LayoutWidth"
-      },
-      {
-        "PropertyName": "LayoutHeight"
       }
     ],
     "GalleryTemplateChildName": "galleryTemplate10_2",
@@ -1857,6 +1794,11 @@
       {
         "Category": "Data",
         "PropertyName": "WrapCount",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "ContentLanguage",
         "RuleProviderType": "Unknown"
       },
       {
@@ -2104,18 +2046,6 @@
           "RuleProviderType": "Unknown"
         },
         "PropertyName": "LayoutMinHeight"
-      },
-      {
-        "PropertyName": "LayoutX"
-      },
-      {
-        "PropertyName": "LayoutY"
-      },
-      {
-        "PropertyName": "LayoutWidth"
-      },
-      {
-        "PropertyName": "LayoutHeight"
       }
     ],
     "HasDynamicProperties": true,
@@ -2288,7 +2218,8 @@
         "InvariantPropertyName": "OnSelect",
         "IsLockable": false,
         "NameMapSourceSchema": "?"
-      }
+      },
+      "ContentLanguage"
     ],
     "DynamicProperties": [
       {
@@ -2333,18 +2264,6 @@
           "RuleProviderType": "Unknown"
         },
         "PropertyName": "LayoutMinHeight"
-      },
-      {
-        "PropertyName": "LayoutX"
-      },
-      {
-        "PropertyName": "LayoutY"
-      },
-      {
-        "PropertyName": "LayoutWidth"
-      },
-      {
-        "PropertyName": "LayoutHeight"
       }
     ],
     "HasDynamicProperties": true,
@@ -2373,6 +2292,11 @@
       {
         "Category": "Data",
         "PropertyName": "Live",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "ContentLanguage",
         "RuleProviderType": "Unknown"
       },
       {
@@ -2627,7 +2551,8 @@
         "InvariantPropertyName": "OnSelect",
         "IsLockable": false,
         "NameMapSourceSchema": "?"
-      }
+      },
+      "ContentLanguage"
     ],
     "DynamicProperties": [
       {
@@ -2672,18 +2597,6 @@
           "RuleProviderType": "Unknown"
         },
         "PropertyName": "LayoutMinHeight"
-      },
-      {
-        "PropertyName": "LayoutX"
-      },
-      {
-        "PropertyName": "LayoutY"
-      },
-      {
-        "PropertyName": "LayoutWidth"
-      },
-      {
-        "PropertyName": "LayoutHeight"
       }
     ],
     "HasDynamicProperties": true,
@@ -2712,6 +2625,11 @@
       {
         "Category": "Data",
         "PropertyName": "Live",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "ContentLanguage",
         "RuleProviderType": "Unknown"
       },
       {
@@ -2965,7 +2883,8 @@
       "PaddingTop",
       "PaddingRight",
       "PaddingBottom",
-      "PaddingLeft"
+      "PaddingLeft",
+      "ContentLanguage"
     ],
     "DynamicProperties": [
       {
@@ -3003,18 +2922,6 @@
           "RuleProviderType": "Unknown"
         },
         "PropertyName": "LayoutMinHeight"
-      },
-      {
-        "PropertyName": "LayoutX"
-      },
-      {
-        "PropertyName": "LayoutY"
-      },
-      {
-        "PropertyName": "LayoutWidth"
-      },
-      {
-        "PropertyName": "LayoutHeight"
       }
     ],
     "HasDynamicProperties": true,
@@ -3043,6 +2950,11 @@
       {
         "Category": "Data",
         "PropertyName": "Live",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "ContentLanguage",
         "RuleProviderType": "Unknown"
       },
       {
@@ -3327,7 +3239,8 @@
         "InvariantPropertyName": "Wrap",
         "IsLockable": false,
         "NameMapSourceSchema": "?"
-      }
+      },
+      "ContentLanguage"
     ],
     "HasDynamicProperties": false,
     "IsAutoGenerated": false,
@@ -3355,6 +3268,11 @@
       {
         "Category": "Data",
         "PropertyName": "Text",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "ContentLanguage",
         "RuleProviderType": "Unknown"
       },
       {
@@ -3644,7 +3562,8 @@
         "InvariantPropertyName": "Wrap",
         "IsLockable": false,
         "NameMapSourceSchema": "?"
-      }
+      },
+      "ContentLanguage"
     ],
     "HasDynamicProperties": false,
     "IsAutoGenerated": false,
@@ -3672,6 +3591,11 @@
       {
         "Category": "Data",
         "PropertyName": "Text",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "ContentLanguage",
         "RuleProviderType": "Unknown"
       },
       {
@@ -3934,18 +3858,6 @@
           "RuleProviderType": "Unknown"
         },
         "PropertyName": "LayoutMinHeight"
-      },
-      {
-        "PropertyName": "LayoutX"
-      },
-      {
-        "PropertyName": "LayoutY"
-      },
-      {
-        "PropertyName": "LayoutWidth"
-      },
-      {
-        "PropertyName": "LayoutHeight"
       }
     ],
     "HasDynamicProperties": true,
@@ -4114,18 +4026,6 @@
           "RuleProviderType": "Unknown"
         },
         "PropertyName": "LayoutMinHeight"
-      },
-      {
-        "PropertyName": "LayoutX"
-      },
-      {
-        "PropertyName": "LayoutY"
-      },
-      {
-        "PropertyName": "LayoutWidth"
-      },
-      {
-        "PropertyName": "LayoutHeight"
       }
     ],
     "HasDynamicProperties": true,
@@ -4301,18 +4201,6 @@
           "RuleProviderType": "Unknown"
         },
         "PropertyName": "LayoutMinHeight"
-      },
-      {
-        "PropertyName": "LayoutX"
-      },
-      {
-        "PropertyName": "LayoutY"
-      },
-      {
-        "PropertyName": "LayoutWidth"
-      },
-      {
-        "PropertyName": "LayoutHeight"
       }
     ],
     "HasDynamicProperties": true,

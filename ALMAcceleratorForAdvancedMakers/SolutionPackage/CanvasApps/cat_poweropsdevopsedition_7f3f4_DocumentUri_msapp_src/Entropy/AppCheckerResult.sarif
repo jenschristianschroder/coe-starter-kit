@@ -14,246 +14,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "TabControl_1.glTabControl_2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "TabControl_1.glTabControl_2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "TabControl_1",
-                "type": "TabControl_1.glTabControl_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "TabControl_1.glTabControl_2.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "TabControl_1.glTabControl_2.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "TabControl_1",
-                "type": "TabControl_1.glTabControl_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "TabControl_1.Icon1_2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "TabControl_1.Icon1_2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "TabControl_1",
-                "type": "TabControl_1.Icon1_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "TabControl_1.Icon1_2.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "TabControl_1.Icon1_2.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "TabControl_1",
-                "type": "TabControl_1.Icon1_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Header.Icon2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Header.Icon2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Header",
-                "type": "Header.Icon2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Header.Icon2.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Header.Icon2.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Header",
-                "type": "Header.Icon2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Header.iconRefresh.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Header.iconRefresh.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Header",
-                "type": "Header.iconRefresh"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Header.iconRefresh.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Header.iconRefresh.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Header",
-                "type": "Header.iconRefresh"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "Preloader.iconRefresh_1.AccessibleLabel"
                 }
               ],
@@ -297,306 +57,6 @@
                 "member": "TabIndex",
                 "module": "Preloader",
                 "type": "Preloader.iconRefresh_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "TabControl.glTabControl_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "TabControl.glTabControl_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "TabControl",
-                "type": "TabControl.glTabControl_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "TabControl.glTabControl_1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "TabControl.glTabControl_1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "TabControl",
-                "type": "TabControl.glTabControl_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "TabControl.Icon1_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "TabControl.Icon1_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "TabControl",
-                "type": "TabControl.Icon1_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "TabControl.Icon1_1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "TabControl.Icon1_1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "TabControl",
-                "type": "TabControl.Icon1_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Header_3.Icon2_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Header_3.Icon2_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Header_3",
-                "type": "Header_3.Icon2_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Header_3.Icon2_1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Header_3.Icon2_1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Header_3",
-                "type": "Header_3.Icon2_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Header_3.iconRefresh_3.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Header_3.iconRefresh_3.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Header_3",
-                "type": "Header_3.iconRefresh_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Header_3.iconRefresh_3.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Header_3.iconRefresh_3.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Header_3",
-                "type": "Header_3.iconRefresh_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Preloader_1.iconRefresh_2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Preloader_1.iconRefresh_2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Preloader_1",
-                "type": "Preloader_1.iconRefresh_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Preloader_1.iconRefresh_2.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Preloader_1.iconRefresh_2.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Preloader_1",
-                "type": "Preloader_1.iconRefresh_2"
               }
             }
           ],
@@ -987,6 +447,36 @@
                 "member": "AccessibleLabel",
                 "module": "Home",
                 "type": "Home.ImportDialog.drpSolutionFolders"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Home.ImportDialog.drpConfigFolders.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Home.ImportDialog.drpConfigFolders.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Home",
+                "type": "Home.ImportDialog.drpConfigFolders"
               }
             }
           ],
@@ -1724,6 +1214,396 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Home.DeployDialog.icoDeployClose.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Home.DeployDialog.icoDeployClose.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Home",
+                "type": "Home.DeployDialog.icoDeployClose"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Home.DeployDialog.icoDeployClose.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Home.DeployDialog.icoDeployClose.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Home",
+                "type": "Home.DeployDialog.icoDeployClose"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Home.DeployDialog.drpDeploymentProfiles.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Home.DeployDialog.drpDeploymentProfiles.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Home",
+                "type": "Home.DeployDialog.drpDeploymentProfiles"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Home.DeployDialog.drpDeploymentSteps.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Home.DeployDialog.drpDeploymentSteps.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Home",
+                "type": "Home.DeployDialog.drpDeploymentSteps"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Home.DeployDialog.txtDeploymentMessage.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Home.DeployDialog.txtDeploymentMessage.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Home",
+                "type": "Home.DeployDialog.txtDeploymentMessage"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Home.DeployDialog.icoDeploymentRepo.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Home.DeployDialog.icoDeploymentRepo.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Home",
+                "type": "Home.DeployDialog.icoDeploymentRepo"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Home.DeployDialog.icoDeploymentRepo.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Home.DeployDialog.icoDeploymentRepo.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Home",
+                "type": "Home.DeployDialog.icoDeploymentRepo"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Home.DeploymentProfileDialog.icoDeployClose_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Home.DeploymentProfileDialog.icoDeployClose_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Home",
+                "type": "Home.DeploymentProfileDialog.icoDeployClose_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Home.DeploymentProfileDialog.icoDeployClose_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Home.DeploymentProfileDialog.icoDeployClose_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Home",
+                "type": "Home.DeploymentProfileDialog.icoDeployClose_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Home.DeploymentProfileDialog.glrDeploymentEnvironments.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Home.DeploymentProfileDialog.glrDeploymentEnvironments.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Home",
+                "type": "Home.DeploymentProfileDialog.glrDeploymentEnvironments"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Home.DeploymentProfileDialog.glrDeploymentEnvironments.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Home.DeploymentProfileDialog.glrDeploymentEnvironments.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Home",
+                "type": "Home.DeploymentProfileDialog.glrDeploymentEnvironments"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Home.icoSelectEnvironment.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Home.icoSelectEnvironment.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Home",
+                "type": "Home.icoSelectEnvironment"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Home.icoSelectEnvironment.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Home.icoSelectEnvironment.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Home",
+                "type": "Home.icoSelectEnvironment"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "Home.lblEnvironment.FocusedBorderThickness"
                 }
               ],
@@ -1898,6 +1778,36 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Home.tglAdvancedMaker.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Home.tglAdvancedMaker.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Home",
+                "type": "Home.tglAdvancedMaker"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -2084,6 +1994,66 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Home.EnvironmentDialog.glrlEnvironments.imgEnvironment_3.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Home.EnvironmentDialog.glrlEnvironments.imgEnvironment_3.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Home",
+                "type": "Home.EnvironmentDialog.glrlEnvironments.imgEnvironment_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Home.EnvironmentDialog.glrlEnvironments.imgEnvironment_3.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Home.EnvironmentDialog.glrlEnvironments.imgEnvironment_3.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Home",
+                "type": "Home.EnvironmentDialog.glrlEnvironments.imgEnvironment_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "Home.EnvironmentDialog.glrlEnvironments.lblEnvironments.FocusedBorderThickness"
                 }
               ],
@@ -2127,36 +2097,6 @@
                 "member": "TabIndex",
                 "module": "Home",
                 "type": "Home.EnvironmentDialog.glrlEnvironments.lblEnvironments"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Home.lblImportSolution.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Home.lblImportSolution.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Home",
-                "type": "Home.lblImportSolution"
               }
             }
           ],
@@ -2277,6 +2217,36 @@
                 "member": "TabIndex",
                 "module": "Home",
                 "type": "Home.lblRefreshSolution"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Home.lblImportSolution.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Home.lblImportSolution.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Home",
+                "type": "Home.lblImportSolution"
               }
             }
           ],
@@ -2444,6 +2414,66 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Home.icoRefreshSolutions.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Home.icoRefreshSolutions.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Home",
+                "type": "Home.icoRefreshSolutions"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Home.icoRefreshSolutions.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Home.icoRefreshSolutions.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Home",
+                "type": "Home.icoRefreshSolutions"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "Home.icoImportSolution.AccessibleLabel"
                 }
               ],
@@ -2547,66 +2577,6 @@
                 "member": "TabIndex",
                 "module": "Home",
                 "type": "Home.icoImportSolutionLabel"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Home.icoRefreshSolutions.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Home.icoRefreshSolutions.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Home",
-                "type": "Home.icoRefreshSolutions"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Home.icoRefreshSolutions.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Home.icoRefreshSolutions.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Home",
-                "type": "Home.icoRefreshSolutions"
               }
             }
           ],
@@ -2787,6 +2757,66 @@
                 "member": "TabIndex",
                 "module": "Home",
                 "type": "Home.glrSolutions.icoLaunchDeleteBuildUrl"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Home.glrSolutions.icoDeploymentProfile.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Home.glrSolutions.icoDeploymentProfile.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Home",
+                "type": "Home.glrSolutions.icoDeploymentProfile"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Home.glrSolutions.icoDeploymentProfile.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Home.glrSolutions.icoDeploymentProfile.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Home",
+                "type": "Home.glrSolutions.icoDeploymentProfile"
               }
             }
           ],
@@ -3344,919 +3374,2299 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.ThemeName"
+                  "fullyQualifiedName": "Home.glrSolutions.icoConfigureDeployment.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.ThemeName",
+                  "fullyQualifiedName": "Home.glrSolutions.icoConfigureDeployment.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "ThemeName",
+                "member": "AccessibleLabel",
+                "module": "Home",
+                "type": "Home.glrSolutions.icoConfigureDeployment"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Home.glrSolutions.icoConfigureDeployment.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Home.glrSolutions.icoConfigureDeployment.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Home",
+                "type": "Home.glrSolutions.icoConfigureDeployment"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.rctDeployDialog.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.rctDeployDialog.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.DeploymentSettingsDialog.rctDeployDialog"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.rctDeployDialog.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.rctDeployDialog.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.DeploymentSettingsDialog.rctDeployDialog"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.icoDeployDialogClose.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.icoDeployDialogClose.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.DeploymentSettingsDialog.icoDeployDialogClose"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.icoDeployDialogClose.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.icoDeployDialogClose.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.DeploymentSettingsDialog.icoDeployDialogClose"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.drpDeployEnvironments.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.drpDeployEnvironments.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.DeploymentSettingsDialog.drpDeployEnvironments"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.icoDeployNewEnvironmentClose.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.icoDeployNewEnvironmentClose.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.DeploymentSettingsDialog.icoDeployNewEnvironmentClose"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.icoDeployNewEnvironmentClose.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.icoDeployNewEnvironmentClose.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.DeploymentSettingsDialog.icoDeployNewEnvironmentClose"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.txtNewDeployEnvironment.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.txtNewDeployEnvironment.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.DeploymentSettingsDialog.txtNewDeployEnvironment"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.icoAddDeploymentEnvironment.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.icoAddDeploymentEnvironment.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.DeploymentSettingsDialog.icoAddDeploymentEnvironment"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.icoAddDeploymentEnvironment.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.icoAddDeploymentEnvironment.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.DeploymentSettingsDialog.icoAddDeploymentEnvironment"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.icoDeployConnectionReferences.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.icoDeployConnectionReferences.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.DeploymentSettingsDialog.icoDeployConnectionReferences"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.icoDeployConnectionReferences.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.icoDeployConnectionReferences.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.DeploymentSettingsDialog.icoDeployConnectionReferences"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.icoDeployEnvironmentVariables.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.icoDeployEnvironmentVariables.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.DeploymentSettingsDialog.icoDeployEnvironmentVariables"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.icoDeployEnvironmentVariables.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.icoDeployEnvironmentVariables.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.DeploymentSettingsDialog.icoDeployEnvironmentVariables"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.icoDeploySharing.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.icoDeploySharing.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.DeploymentSettingsDialog.icoDeploySharing"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.icoDeploySharing.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.icoDeploySharing.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.DeploymentSettingsDialog.icoDeploySharing"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.icoDeployOwnership.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.icoDeployOwnership.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.DeploymentSettingsDialog.icoDeployOwnership"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.icoDeployOwnership.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.icoDeployOwnership.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.DeploymentSettingsDialog.icoDeployOwnership"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.icoRefreshConnections.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.icoRefreshConnections.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.DeploymentSettingsDialog.icoRefreshConnections"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.icoRefreshConnections.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.icoRefreshConnections.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.DeploymentSettingsDialog.icoRefreshConnections"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrFlows.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrFlows.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrFlows"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrFlows.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrFlows.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrFlows"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrFlows.icoFlow.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrFlows.icoFlow.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrFlows.icoFlow"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrFlows.icoFlow.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrFlows.icoFlow.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrFlows.icoFlow"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrFlows.icoOpenFlow.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrFlows.icoOpenFlow.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrFlows.icoOpenFlow"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrFlows.icoOpenFlow.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrFlows.icoOpenFlow.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrFlows.icoOpenFlow"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrFlows.drpFlowOwnerUsers.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrFlows.drpFlowOwnerUsers.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrFlows.drpFlowOwnerUsers"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrEnvironmentVariables.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrEnvironmentVariables.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrEnvironmentVariables"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrEnvironmentVariables.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrEnvironmentVariables.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrEnvironmentVariables"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrEnvironmentVariables.lblEnvironmentVariableLogicalName.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrEnvironmentVariables.lblEnvironmentVariableLogicalName.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrEnvironmentVariables.lblEnvironmentVariableLogicalName"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrEnvironmentVariables.lblEnvironmentVariableLogicalName.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrEnvironmentVariables.lblEnvironmentVariableLogicalName.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrEnvironmentVariables.lblEnvironmentVariableLogicalName"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrEnvironmentVariables.drpSharepointSites.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrEnvironmentVariables.drpSharepointSites.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrEnvironmentVariables.drpSharepointSites"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrEnvironmentVariables.drpSharepointLists.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrEnvironmentVariables.drpSharepointLists.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrEnvironmentVariables.drpSharepointLists"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrEnvironmentVariables.txtEnvironmentVariableValue.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrEnvironmentVariables.txtEnvironmentVariableValue.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrEnvironmentVariables.txtEnvironmentVariableValue"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrConnectionReferences.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrConnectionReferences.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrConnectionReferences"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrConnectionReferences.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrConnectionReferences.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrConnectionReferences"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrConnectionReferences.icoConnectionStatus.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrConnectionReferences.icoConnectionStatus.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrConnectionReferences.icoConnectionStatus"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrConnectionReferences.icoConnectionStatus.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrConnectionReferences.icoConnectionStatus.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrConnectionReferences.icoConnectionStatus"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrConnectionReferences.drpConnectionReferenceConnections.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrConnectionReferences.drpConnectionReferenceConnections.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrConnectionReferences.drpConnectionReferenceConnections"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrConnectionReferences.icoNewConnection.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrConnectionReferences.icoNewConnection.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrConnectionReferences.icoNewConnection"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrConnectionReferences.icoNewConnection.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrConnectionReferences.icoNewConnection.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrConnectionReferences.icoNewConnection"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrConnectionReferences.icoRequestConnection.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrConnectionReferences.icoRequestConnection.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrConnectionReferences.icoRequestConnection"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrConnectionReferences.icoRequestConnection.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrConnectionReferences.icoRequestConnection.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrConnectionReferences.icoRequestConnection"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrCanvasApps.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrCanvasApps.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrCanvasApps"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrCanvasApps.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrCanvasApps.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrCanvasApps"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrCanvasApps.icoCanvasApp.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrCanvasApps.icoCanvasApp.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrCanvasApps.icoCanvasApp"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrCanvasApps.icoCanvasApp.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrCanvasApps.icoCanvasApp.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrCanvasApps.icoCanvasApp"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrCanvasApps.icoLaunchApp.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrCanvasApps.icoLaunchApp.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrCanvasApps.icoLaunchApp"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrCanvasApps.icoLaunchApp.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrCanvasApps.icoLaunchApp.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrCanvasApps.icoLaunchApp"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrCanvasApps.drpCanvasAppShareGroups.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrCanvasApps.drpCanvasAppShareGroups.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrCanvasApps.drpCanvasAppShareGroups"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrCanvasApps.icoViewGroupMembers.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrCanvasApps.icoViewGroupMembers.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrCanvasApps.icoViewGroupMembers"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrCanvasApps.icoViewGroupMembers.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrCanvasApps.icoViewGroupMembers.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrCanvasApps.icoViewGroupMembers"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrCanvasApps.drpCanvasAppSharePermission.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrCanvasApps.drpCanvasAppSharePermission.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.DeploymentSettingsDialog.glrCanvasApps.drpCanvasAppSharePermission"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.ConnectionRequestDialog.icoConnectionRequestDialogClose.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.ConnectionRequestDialog.icoConnectionRequestDialogClose.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.ConnectionRequestDialog.icoConnectionRequestDialogClose"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.ConnectionRequestDialog.icoConnectionRequestDialogClose.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.ConnectionRequestDialog.icoConnectionRequestDialogClose.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.ConnectionRequestDialog.icoConnectionRequestDialogClose"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.ConnectionRequestDialog.txtConnectionRequestSearch.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.ConnectionRequestDialog.txtConnectionRequestSearch.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.ConnectionRequestDialog.txtConnectionRequestSearch"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.ConnectionRequestDialog.glrConnectionRequestBrowseUsers.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.ConnectionRequestDialog.glrConnectionRequestBrowseUsers.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.ConnectionRequestDialog.glrConnectionRequestBrowseUsers"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.ConnectionRequestDialog.glrConnectionRequestBrowseUsers.Rectangle2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.ConnectionRequestDialog.glrConnectionRequestBrowseUsers.Rectangle2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.ConnectionRequestDialog.glrConnectionRequestBrowseUsers.Rectangle2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.ConnectionRequestDialog.glrConnectionRequestBrowseUsers.Rectangle2.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.ConnectionRequestDialog.glrConnectionRequestBrowseUsers.Rectangle2.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.ConnectionRequestDialog.glrConnectionRequestBrowseUsers.Rectangle2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.ConnectionRequestDialog.glrConnectionRequestBrowseUsers.icoSelectUser.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.ConnectionRequestDialog.glrConnectionRequestBrowseUsers.icoSelectUser.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.ConnectionRequestDialog.glrConnectionRequestBrowseUsers.icoSelectUser"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.ConnectionRequestDialog.glrConnectionRequestBrowseUsers.icoSelectUser.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.ConnectionRequestDialog.glrConnectionRequestBrowseUsers.icoSelectUser.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.ConnectionRequestDialog.glrConnectionRequestBrowseUsers.icoSelectUser"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.ConnectionRequestDialog.glrConnectionRequestBrowseUsers.iconUser1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.ConnectionRequestDialog.glrConnectionRequestBrowseUsers.iconUser1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.ConnectionRequestDialog.glrConnectionRequestBrowseUsers.iconUser1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.ConnectionRequestDialog.glrConnectionRequestBrowseUsers.iconUser1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.ConnectionRequestDialog.glrConnectionRequestBrowseUsers.iconUser1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.ConnectionRequestDialog.glrConnectionRequestBrowseUsers.iconUser1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.ConnectionRequestDialog.glrConnectionRequestBrowseUsers.connectionRequestUserImage.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.ConnectionRequestDialog.glrConnectionRequestBrowseUsers.connectionRequestUserImage.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.ConnectionRequestDialog.glrConnectionRequestBrowseUsers.connectionRequestUserImage"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.ConnectionRequestDialog.glrConnectionRequestBrowseUsers.connectionRequestUserImage.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.ConnectionRequestDialog.glrConnectionRequestBrowseUsers.connectionRequestUserImage.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.ConnectionRequestDialog.glrConnectionRequestBrowseUsers.connectionRequestUserImage"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.ConnectionRequestDialog.glrConnectionRequestBrowseUsers.connectionRequestUserEmail.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.ConnectionRequestDialog.glrConnectionRequestBrowseUsers.connectionRequestUserEmail.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.ConnectionRequestDialog.glrConnectionRequestBrowseUsers.connectionRequestUserEmail"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.ConnectionRequestDialog.glrInvitedUsers.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.ConnectionRequestDialog.glrInvitedUsers.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.ConnectionRequestDialog.glrInvitedUsers"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.ConnectionRequestDialog.glrInvitedUsers.Rectangle2_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.ConnectionRequestDialog.glrInvitedUsers.Rectangle2_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.ConnectionRequestDialog.glrInvitedUsers.Rectangle2_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.ConnectionRequestDialog.glrInvitedUsers.Rectangle2_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.ConnectionRequestDialog.glrInvitedUsers.Rectangle2_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.ConnectionRequestDialog.glrInvitedUsers.Rectangle2_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.ConnectionRequestDialog.glrInvitedUsers.iconUser1_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.ConnectionRequestDialog.glrInvitedUsers.iconUser1_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.ConnectionRequestDialog.glrInvitedUsers.iconUser1_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.ConnectionRequestDialog.glrInvitedUsers.iconUser1_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.ConnectionRequestDialog.glrInvitedUsers.iconUser1_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.ConnectionRequestDialog.glrInvitedUsers.iconUser1_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.ConnectionRequestDialog.glrInvitedUsers.icoConnectionRequestRemoveUser.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.ConnectionRequestDialog.glrInvitedUsers.icoConnectionRequestRemoveUser.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.ConnectionRequestDialog.glrInvitedUsers.icoConnectionRequestRemoveUser"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.ConnectionRequestDialog.glrInvitedUsers.icoConnectionRequestRemoveUser.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.ConnectionRequestDialog.glrInvitedUsers.icoConnectionRequestRemoveUser.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.ConnectionRequestDialog.glrInvitedUsers.icoConnectionRequestRemoveUser"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.ConnectionRequestDialog.glrInvitedUsers.connectionInvitedUserEmail.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DeploymentSettingsScreen.ConnectionRequestDialog.glrInvitedUsers.connectionInvitedUserEmail.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen.ConnectionRequestDialog.glrInvitedUsers.connectionInvitedUserEmail"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.SelectedStep"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.SelectedStep",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "SelectedStep",
                 "module": "App",
                 "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.PrimaryColor4Value"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.PrimaryColor4Value",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "PrimaryColor4Value",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.TextEmphasisFontSizePhoneValue"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.TextEmphasisFontSizePhoneValue",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TextEmphasisFontSizePhoneValue",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.TextBodyFontSizePhoneValue"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.TextBodyFontSizePhoneValue",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TextBodyFontSizePhoneValue",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.LastDeletedSolutionsSettingName"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.LastDeletedSolutionsSettingName",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "LastDeletedSolutionsSettingName",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.SelectedProjectServiceEndPoints"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.SelectedProjectServiceEndPoints",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "SelectedProjectServiceEndPoints",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.DefaultOrgValue"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.DefaultOrgValue",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "DefaultOrgValue",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.logoContoso"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.logoContoso",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "logoContoso",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "TabControl_1.PrimaryColor1Value"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "TabControl_1.PrimaryColor1Value",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "PrimaryColor1Value",
-                "module": "TabControl_1",
-                "type": "TabControl_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "TabControl_1.PrimaryColor1TextValue"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "TabControl_1.PrimaryColor1TextValue",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "PrimaryColor1TextValue",
-                "module": "TabControl_1",
-                "type": "TabControl_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "TabControl_1.PrimaryColor3TextValue"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "TabControl_1.PrimaryColor3TextValue",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "PrimaryColor3TextValue",
-                "module": "TabControl_1",
-                "type": "TabControl_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "TabControl_1.RadiusValue"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "TabControl_1.RadiusValue",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "RadiusValue",
-                "module": "TabControl_1",
-                "type": "TabControl_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "TabControl_1.PaddingValue"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "TabControl_1.PaddingValue",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "PaddingValue",
-                "module": "TabControl_1",
-                "type": "TabControl_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "TabControl_1.TextEmphasisFontSizeValue"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "TabControl_1.TextEmphasisFontSizeValue",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TextEmphasisFontSizeValue",
-                "module": "TabControl_1",
-                "type": "TabControl_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "TabControl_1.TextEmphasisFontSizePhoneValue"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "TabControl_1.TextEmphasisFontSizePhoneValue",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TextEmphasisFontSizePhoneValue",
-                "module": "TabControl_1",
-                "type": "TabControl_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "TabControl_1.TextBodyFontSizePhoneValue"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "TabControl_1.TextBodyFontSizePhoneValue",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TextBodyFontSizePhoneValue",
-                "module": "TabControl_1",
-                "type": "TabControl_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "TabControl_1.BackgroundColorValue"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "TabControl_1.BackgroundColorValue",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "BackgroundColorValue",
-                "module": "TabControl_1",
-                "type": "TabControl_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "TabControl_1.BorderThicknessValue"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "TabControl_1.BorderThicknessValue",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "BorderThicknessValue",
-                "module": "TabControl_1",
-                "type": "TabControl_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "TabControl_1.FocusedBorderThicknessValue"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "TabControl_1.FocusedBorderThicknessValue",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "FocusedBorderThicknessValue",
-                "module": "TabControl_1",
-                "type": "TabControl_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Header.PrimaryColor1Value"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Header.PrimaryColor1Value",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "PrimaryColor1Value",
-                "module": "Header",
-                "type": "Header"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Header.PrimaryColor1TextValue"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Header.PrimaryColor1TextValue",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "PrimaryColor1TextValue",
-                "module": "Header",
-                "type": "Header"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Header.PrimaryColor3TextValue"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Header.PrimaryColor3TextValue",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "PrimaryColor3TextValue",
-                "module": "Header",
-                "type": "Header"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Header.defaultLabelColorValue"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Header.defaultLabelColorValue",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "defaultLabelColorValue",
-                "module": "Header",
-                "type": "Header"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Header.RadiusValue"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Header.RadiusValue",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "RadiusValue",
-                "module": "Header",
-                "type": "Header"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Header.PaddingValue"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Header.PaddingValue",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "PaddingValue",
-                "module": "Header",
-                "type": "Header"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Header.TextEmphasisFontSizeValue"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Header.TextEmphasisFontSizeValue",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TextEmphasisFontSizeValue",
-                "module": "Header",
-                "type": "Header"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Header.TextEmphasisFontSizePhoneValue"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Header.TextEmphasisFontSizePhoneValue",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TextEmphasisFontSizePhoneValue",
-                "module": "Header",
-                "type": "Header"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Header.TextBodyFontSizePhoneValue"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Header.TextBodyFontSizePhoneValue",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TextBodyFontSizePhoneValue",
-                "module": "Header",
-                "type": "Header"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Header.BackgroundColorValue"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Header.BackgroundColorValue",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "BackgroundColorValue",
-                "module": "Header",
-                "type": "Header"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Header.BorderThicknessValue"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Header.BorderThicknessValue",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "BorderThicknessValue",
-                "module": "Header",
-                "type": "Header"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Header.FocusedBorderThicknessValue"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Header.FocusedBorderThicknessValue",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "FocusedBorderThicknessValue",
-                "module": "Header",
-                "type": "Header"
               }
             }
           ],
@@ -4634,19 +6044,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "TabControl.PrimaryColor1Value"
+                  "fullyQualifiedName": "CallExportPipeline.buildId"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "TabControl.PrimaryColor1Value",
+                  "fullyQualifiedName": "CallExportPipeline.buildId",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "PrimaryColor1Value",
-                "module": "TabControl",
-                "type": "TabControl"
+                "member": "buildId",
+                "module": "CallExportPipeline",
+                "type": "CallExportPipeline"
               }
             }
           ],
@@ -4664,19 +6074,48 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "TabControl.PrimaryColor1TextValue"
+                  "fullyQualifiedName": "Home"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "TabControl.PrimaryColor1TextValue",
+                  "fullyQualifiedName": "Home",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "PrimaryColor1TextValue",
-                "module": "TabControl",
-                "type": "TabControl"
+                "module": "Home",
+                "type": "Home"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-ScreenHasManyControls",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Home.branchName"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Home.branchName",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "branchName",
+                "module": "Home",
+                "type": "Home"
               }
             }
           ],
@@ -4694,19 +6133,18 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "TabControl.PrimaryColor3TextValue"
+                  "fullyQualifiedName": "DeploymentSettingsScreen"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "TabControl.PrimaryColor3TextValue",
+                  "fullyQualifiedName": "DeploymentSettingsScreen",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "PrimaryColor3TextValue",
-                "module": "TabControl",
-                "type": "TabControl"
+                "module": "DeploymentSettingsScreen",
+                "type": "DeploymentSettingsScreen"
               }
             }
           ],
@@ -4716,968 +6154,8 @@
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "TabControl.RadiusValue"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "TabControl.RadiusValue",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "RadiusValue",
-                "module": "TabControl",
-                "type": "TabControl"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "TabControl.PaddingValue"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "TabControl.PaddingValue",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "PaddingValue",
-                "module": "TabControl",
-                "type": "TabControl"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "TabControl.TextEmphasisFontSizeValue"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "TabControl.TextEmphasisFontSizeValue",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TextEmphasisFontSizeValue",
-                "module": "TabControl",
-                "type": "TabControl"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "TabControl.TextEmphasisFontSizePhoneValue"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "TabControl.TextEmphasisFontSizePhoneValue",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TextEmphasisFontSizePhoneValue",
-                "module": "TabControl",
-                "type": "TabControl"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "TabControl.TextBodyFontSizePhoneValue"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "TabControl.TextBodyFontSizePhoneValue",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TextBodyFontSizePhoneValue",
-                "module": "TabControl",
-                "type": "TabControl"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "TabControl.BackgroundColorValue"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "TabControl.BackgroundColorValue",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "BackgroundColorValue",
-                "module": "TabControl",
-                "type": "TabControl"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "TabControl.BorderThicknessValue"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "TabControl.BorderThicknessValue",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "BorderThicknessValue",
-                "module": "TabControl",
-                "type": "TabControl"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "TabControl.FocusedBorderThicknessValue"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "TabControl.FocusedBorderThicknessValue",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "FocusedBorderThicknessValue",
-                "module": "TabControl",
-                "type": "TabControl"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Header_3.PrimaryColor1Value"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Header_3.PrimaryColor1Value",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "PrimaryColor1Value",
-                "module": "Header_3",
-                "type": "Header_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Header_3.PrimaryColor1TextValue"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Header_3.PrimaryColor1TextValue",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "PrimaryColor1TextValue",
-                "module": "Header_3",
-                "type": "Header_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Header_3.PrimaryColor3TextValue"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Header_3.PrimaryColor3TextValue",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "PrimaryColor3TextValue",
-                "module": "Header_3",
-                "type": "Header_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Header_3.defaultLabelColorValue"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Header_3.defaultLabelColorValue",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "defaultLabelColorValue",
-                "module": "Header_3",
-                "type": "Header_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Header_3.RadiusValue"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Header_3.RadiusValue",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "RadiusValue",
-                "module": "Header_3",
-                "type": "Header_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Header_3.PaddingValue"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Header_3.PaddingValue",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "PaddingValue",
-                "module": "Header_3",
-                "type": "Header_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Header_3.TextEmphasisFontSizeValue"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Header_3.TextEmphasisFontSizeValue",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TextEmphasisFontSizeValue",
-                "module": "Header_3",
-                "type": "Header_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Header_3.TextEmphasisFontSizePhoneValue"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Header_3.TextEmphasisFontSizePhoneValue",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TextEmphasisFontSizePhoneValue",
-                "module": "Header_3",
-                "type": "Header_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Header_3.TextBodyFontSizePhoneValue"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Header_3.TextBodyFontSizePhoneValue",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TextBodyFontSizePhoneValue",
-                "module": "Header_3",
-                "type": "Header_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Header_3.BackgroundColorValue"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Header_3.BackgroundColorValue",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "BackgroundColorValue",
-                "module": "Header_3",
-                "type": "Header_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Header_3.BorderThicknessValue"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Header_3.BorderThicknessValue",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "BorderThicknessValue",
-                "module": "Header_3",
-                "type": "Header_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Header_3.FocusedBorderThicknessValue"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Header_3.FocusedBorderThicknessValue",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "FocusedBorderThicknessValue",
-                "module": "Header_3",
-                "type": "Header_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Preloader_1.PrimaryColor1Value"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Preloader_1.PrimaryColor1Value",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "PrimaryColor1Value",
-                "module": "Preloader_1",
-                "type": "Preloader_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Preloader_1.PrimaryColor1TextValue"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Preloader_1.PrimaryColor1TextValue",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "PrimaryColor1TextValue",
-                "module": "Preloader_1",
-                "type": "Preloader_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Preloader_1.PrimaryColor2TextValue"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Preloader_1.PrimaryColor2TextValue",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "PrimaryColor2TextValue",
-                "module": "Preloader_1",
-                "type": "Preloader_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Preloader_1.PrimaryColor3TextValue"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Preloader_1.PrimaryColor3TextValue",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "PrimaryColor3TextValue",
-                "module": "Preloader_1",
-                "type": "Preloader_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Preloader_1.RadiusValue"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Preloader_1.RadiusValue",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "RadiusValue",
-                "module": "Preloader_1",
-                "type": "Preloader_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Preloader_1.PaddingValue"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Preloader_1.PaddingValue",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "PaddingValue",
-                "module": "Preloader_1",
-                "type": "Preloader_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Preloader_1.TextEmphasisFontSizeValue"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Preloader_1.TextEmphasisFontSizeValue",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TextEmphasisFontSizeValue",
-                "module": "Preloader_1",
-                "type": "Preloader_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Preloader_1.TextEmphasisFontSizePhoneValue"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Preloader_1.TextEmphasisFontSizePhoneValue",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TextEmphasisFontSizePhoneValue",
-                "module": "Preloader_1",
-                "type": "Preloader_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Preloader_1.TextBodyFontSizePhoneValue"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Preloader_1.TextBodyFontSizePhoneValue",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TextBodyFontSizePhoneValue",
-                "module": "Preloader_1",
-                "type": "Preloader_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Preloader_1.BackgroundColorValue"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Preloader_1.BackgroundColorValue",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "BackgroundColorValue",
-                "module": "Preloader_1",
-                "type": "Preloader_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Preloader_1.BorderThicknessValue"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Preloader_1.BorderThicknessValue",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "BorderThicknessValue",
-                "module": "Preloader_1",
-                "type": "Preloader_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Preloader_1.FocusedBorderThicknessValue"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Preloader_1.FocusedBorderThicknessValue",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "FocusedBorderThicknessValue",
-                "module": "Preloader_1",
-                "type": "Preloader_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
+          "ruleId": "app-ScreenHasManyControls",
+          "ruleIndex": 4
         }
       ],
       "tool": {
@@ -5754,24 +6232,28 @@
               }
             },
             {
-              "id": "app-UnusedMediaResources",
+              "id": "app-ScreenHasManyControls",
               "messageStrings": {
                 "issue": {
-                  "text": "Unused media files"
+                  "text": "Too many controls on a screen"
                 }
               },
               "properties": {
                 "componentType": "app",
                 "howToFix": [
-                  "Remove the unused media file in the Media pane."
+                  "Reduce the number of controls on the screen.",
+                  "Break the app into more screens to reduce the per-screen complexity.",
+                  "Use components to unify grouped controls that are identical across screens, reducing duplication.",
+                  "Use galleries to represent a series of repeated similar controls.",
+                  "Break the app into multiple apps so that each app is small and performant."
                 ],
                 "level": "Medium",
                 "primaryCategory": "performance",
-                "whyFix": "This media file is not referenced by any control formulas so it is not needed. Removing it will improve performance."
+                "whyFix": "Each control consumes resources, and an app may become slow or unresponsive if a screen has too many controls. The estimated complexity of \"Home\" is 370, which exceeds the maximum threshold recommended (300)."
               }
             }
           ],
-          "version": "1.309"
+          "version": "1.317"
         }
       }
     }

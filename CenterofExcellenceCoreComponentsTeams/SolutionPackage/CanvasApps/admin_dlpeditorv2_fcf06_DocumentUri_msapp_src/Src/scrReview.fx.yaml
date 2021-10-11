@@ -47,7 +47,7 @@
                 OnSelect: =Navigate(scrMain, ScreenTransition.Fade)
                 PaddingLeft: =15
                 Size: =13
-                Text: ="> Edit Policy"
+                Text: ="> " & varPolicyMode & " Policy"
                 ZIndex: =2
 
         MainSectionContainer3_4 As groupContainer.verticalAutoLayoutContainer:
@@ -126,18 +126,13 @@
                                 },
                                 {
                                     Label: "Impact",
-                                    Value: CountRows(
-                                    Filter(
-                                        col_loadedReviewApps,
-                                        (hasConfidential && hasGeneral) || hasBlocked
-                                    )
-                                ) & " Apps and " &
-                                 CountRows(
-                                    Filter(
-                                        col_loadedReviewFlows,
-                                        (hasConfidential && hasGeneral) || hasBlocked
-                                    )
-                                ) & " Flows impacted"
+                                    Value:  CountRows(Filter(
+                                    'PowerApps Apps',
+                                     'App Environment ID' in SelectedEnvironments.name
+                                )) & " apps " &  CountRows(Filter(
+                                    Flows,
+                                     'Flow Environment ID' in SelectedEnvironments.name
+                                )) & " flows analyzed"
                                 }
                             )
                         Layout: =Layout.Vertical
@@ -245,7 +240,7 @@
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                         HoverColor: =RGBA(255, 255, 255, 1)
                         HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
-                        OnSelect: |
+                        OnSelect: |-
                             =Set(
                                 response,
                                 If(
@@ -261,15 +256,14 @@
                                             environments: col_environmentsInPolicy
                                         }
                                     ),
-                                    PowerPlatformforAdmins.CreatePolicyV2(
-                                        {
+                                    PowerPlatformforAdmins.CreatePolicyV2({
+                                        'api-version': "2020-10-01",
                                             displayName: varPolicyName,
-                                            defaultConnectorsClassification: galDLPPolicies.Selected.defaultConnectorsClassification,
+                                            defaultConnectorsClassification: drpSelectDefaultGroup.Selected.value,
                                             connectorGroups: col_connectorGroups,
                                             environmentType: drpPolicyScope.Selected.value,
                                             environments: col_environmentsInPolicy
-                                        }
-                                    )
+                                        })
                                 )
                             );
                         PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
@@ -309,16 +303,7 @@
                                             defaultConnectorsClassification: galDLPPolicies.Selected.defaultConnectorsClassification,
                                             connectorGroups: col_connectorGroups,
                                             environmentType: drpPolicyScope.Selected.value,
-                                            environments: First(col_environmentsInPolicy)
-                                        }
-                                    ),
-                                    PowerPlatformforAdmins.CreatePolicyV2(
-                                        {
-                                            displayName: varPolicyName,
-                                            defaultConnectorsClassification: galDLPPolicies.Selected.defaultConnectorsClassification,
-                                            connectorGroups: col_connectorGroups,
-                                            environmentType: drpPolicyScope.Selected.value,
-                                            environments: First(col_environmentsInPolicy)
+                                            environments: col_environmentsInPolicy
                                         }
                                     )
                                 )

@@ -86,7 +86,8 @@
       "Italic",
       "Underline",
       "Strikethrough",
-      "OnSelect"
+      "OnSelect",
+      "ContentLanguage"
     ],
     "DynamicProperties": [
       {
@@ -131,18 +132,6 @@
           "RuleProviderType": "Unknown"
         },
         "PropertyName": "LayoutMinHeight"
-      },
-      {
-        "PropertyName": "LayoutX"
-      },
-      {
-        "PropertyName": "LayoutY"
-      },
-      {
-        "PropertyName": "LayoutWidth"
-      },
-      {
-        "PropertyName": "LayoutHeight"
       }
     ],
     "HasDynamicProperties": true,
@@ -161,6 +150,11 @@
       {
         "Category": "Data",
         "PropertyName": "Text",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "ContentLanguage",
         "RuleProviderType": "Unknown"
       },
       {
@@ -387,7 +381,8 @@
       "Italic",
       "Underline",
       "Strikethrough",
-      "OnSelect"
+      "OnSelect",
+      "ContentLanguage"
     ],
     "DynamicProperties": [
       {
@@ -432,18 +427,6 @@
           "RuleProviderType": "Unknown"
         },
         "PropertyName": "LayoutMinHeight"
-      },
-      {
-        "PropertyName": "LayoutX"
-      },
-      {
-        "PropertyName": "LayoutY"
-      },
-      {
-        "PropertyName": "LayoutWidth"
-      },
-      {
-        "PropertyName": "LayoutHeight"
       }
     ],
     "HasDynamicProperties": true,
@@ -462,6 +445,11 @@
       {
         "Category": "Data",
         "PropertyName": "Text",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "ContentLanguage",
         "RuleProviderType": "Unknown"
       },
       {
@@ -649,7 +637,7 @@
       {
         "AFDDataSourceName": "",
         "AutoRuleBindingEnabled": false,
-        "AutoRuleBindingString": "RGBA(135, 100, 184, 1)",
+        "AutoRuleBindingString": "",
         "InvariantPropertyName": "Fill",
         "IsLockable": false,
         "NameMapSourceSchema": "?"
@@ -680,7 +668,8 @@
         "NameMapSourceSchema": "?"
       },
       "ZIndex",
-      "BorderThickness"
+      "BorderThickness",
+      "ContentLanguage"
     ],
     "DynamicProperties": [
       {
@@ -725,18 +714,6 @@
           "RuleProviderType": "Unknown"
         },
         "PropertyName": "LayoutMinHeight"
-      },
-      {
-        "PropertyName": "LayoutX"
-      },
-      {
-        "PropertyName": "LayoutY"
-      },
-      {
-        "PropertyName": "LayoutWidth"
-      },
-      {
-        "PropertyName": "LayoutHeight"
       }
     ],
     "HasDynamicProperties": true,
@@ -752,6 +729,11 @@
     "ParentIndex": 6,
     "PersistMetaDataIDKey": false,
     "Properties": [
+      {
+        "Category": "Data",
+        "PropertyName": "ContentLanguage",
+        "RuleProviderType": "Unknown"
+      },
       {
         "Category": "Design",
         "PropertyName": "Fill",
@@ -894,18 +876,6 @@
           "RuleProviderType": "Unknown"
         },
         "PropertyName": "LayoutMinHeight"
-      },
-      {
-        "PropertyName": "LayoutX"
-      },
-      {
-        "PropertyName": "LayoutY"
-      },
-      {
-        "PropertyName": "LayoutWidth"
-      },
-      {
-        "PropertyName": "LayoutHeight"
       }
     ],
     "HasDynamicProperties": true,
@@ -1037,18 +1007,6 @@
           "RuleProviderType": "Unknown"
         },
         "PropertyName": "LayoutMinHeight"
-      },
-      {
-        "PropertyName": "LayoutX"
-      },
-      {
-        "PropertyName": "LayoutY"
-      },
-      {
-        "PropertyName": "LayoutWidth"
-      },
-      {
-        "PropertyName": "LayoutHeight"
       }
     ],
     "HasDynamicProperties": true,
@@ -1240,18 +1198,6 @@
           "RuleProviderType": "Unknown"
         },
         "PropertyName": "LayoutMinHeight"
-      },
-      {
-        "PropertyName": "LayoutX"
-      },
-      {
-        "PropertyName": "LayoutY"
-      },
-      {
-        "PropertyName": "LayoutWidth"
-      },
-      {
-        "PropertyName": "LayoutHeight"
       }
     ],
     "HasDynamicProperties": true,
@@ -1617,18 +1563,6 @@
           "RuleProviderType": "Unknown"
         },
         "PropertyName": "LayoutMinHeight"
-      },
-      {
-        "PropertyName": "LayoutX"
-      },
-      {
-        "PropertyName": "LayoutY"
-      },
-      {
-        "PropertyName": "LayoutWidth"
-      },
-      {
-        "PropertyName": "LayoutHeight"
       }
     ],
     "HasDynamicProperties": true,
@@ -1814,18 +1748,6 @@
           "RuleProviderType": "Unknown"
         },
         "PropertyName": "LayoutMinHeight"
-      },
-      {
-        "PropertyName": "LayoutX"
-      },
-      {
-        "PropertyName": "LayoutY"
-      },
-      {
-        "PropertyName": "LayoutWidth"
-      },
-      {
-        "PropertyName": "LayoutHeight"
       }
     ],
     "HasDynamicProperties": true,
@@ -1971,7 +1893,8 @@
         "InvariantPropertyName": "Visible",
         "IsLockable": false,
         "NameMapSourceSchema": "?"
-      }
+      },
+      "ContentLanguage"
     ],
     "DynamicProperties": [
       {
@@ -2016,18 +1939,6 @@
           "RuleProviderType": "Unknown"
         },
         "PropertyName": "LayoutMinHeight"
-      },
-      {
-        "PropertyName": "LayoutX"
-      },
-      {
-        "PropertyName": "LayoutY"
-      },
-      {
-        "PropertyName": "LayoutWidth"
-      },
-      {
-        "PropertyName": "LayoutHeight"
       }
     ],
     "GalleryTemplateChildName": "galleryTemplate8",
@@ -2052,6 +1963,11 @@
       {
         "Category": "Data",
         "PropertyName": "Items",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "ContentLanguage",
         "RuleProviderType": "Unknown"
       },
       {
@@ -2300,7 +2216,8 @@
         "IsLockable": false,
         "NameMapSourceSchema": "?"
       },
-      "ZIndex"
+      "ZIndex",
+      "ContentLanguage"
     ],
     "DynamicProperties": [
       {
@@ -2345,18 +2262,6 @@
           "RuleProviderType": "Unknown"
         },
         "PropertyName": "LayoutMinHeight"
-      },
-      {
-        "PropertyName": "LayoutX"
-      },
-      {
-        "PropertyName": "LayoutY"
-      },
-      {
-        "PropertyName": "LayoutWidth"
-      },
-      {
-        "PropertyName": "LayoutHeight"
       }
     ],
     "GalleryTemplateChildName": "galleryTemplate5",
@@ -2376,6 +2281,11 @@
       {
         "Category": "Data",
         "PropertyName": "Items",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "ContentLanguage",
         "RuleProviderType": "Unknown"
       },
       {
@@ -2525,7 +2435,8 @@
       "Y",
       "Width",
       "Height",
-      "ZIndex"
+      "ZIndex",
+      "ContentLanguage"
     ],
     "DynamicProperties": [
       {
@@ -2570,18 +2481,6 @@
           "RuleProviderType": "Unknown"
         },
         "PropertyName": "LayoutMinHeight"
-      },
-      {
-        "PropertyName": "LayoutX"
-      },
-      {
-        "PropertyName": "LayoutY"
-      },
-      {
-        "PropertyName": "LayoutWidth"
-      },
-      {
-        "PropertyName": "LayoutHeight"
       }
     ],
     "GalleryTemplateChildName": "galleryTemplate6",
@@ -2606,6 +2505,11 @@
       {
         "Category": "Data",
         "PropertyName": "Items",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "ContentLanguage",
         "RuleProviderType": "Unknown"
       },
       {
@@ -2852,18 +2756,6 @@
           "RuleProviderType": "Unknown"
         },
         "PropertyName": "LayoutMinHeight"
-      },
-      {
-        "PropertyName": "LayoutX"
-      },
-      {
-        "PropertyName": "LayoutY"
-      },
-      {
-        "PropertyName": "LayoutWidth"
-      },
-      {
-        "PropertyName": "LayoutHeight"
       }
     ],
     "HasDynamicProperties": true,
@@ -3037,7 +2929,15 @@
         "IsLockable": false,
         "NameMapSourceSchema": "?"
       },
-      "Visible"
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "If(If(varPolicyMode = \"Create\", galPreBuiltConnectors.Selected.properties.displayName, galPreBuiltConnectors.Selected.name)  in [\"Excel Online (Business)\", \"Microsoft Forms Pro\", \"Microsoft Teams\", \"Microsoft To-Do (Business)\", \"Office 365 Groups\", \"Office 365 Outlook\", \"Office 365 Users\", \"OneDrive for Business\", \"OneNote (Business)\", \"Planner\", \"Shifts\", \"SharePoint\", \"Skype for Business Online\", \"Power BI\", \"Yammer\", \"Kaizala\", \"Office 365 Groups Mail (Preview)\", \"Cloud App Security\", \"Approvals\", \"Notifications\", \"Common Data Service\", \"Common Data Service (current environment)\", \"Power Apps Notification\", \"Power Apps Notification v2\"] && ThisItem.classification = \"Blocked\", false, true)",
+        "InvariantPropertyName": "Visible",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
+      "ContentLanguage"
     ],
     "HasDynamicProperties": false,
     "IsAutoGenerated": false,
@@ -3052,6 +2952,11 @@
     "ParentIndex": 1,
     "PersistMetaDataIDKey": false,
     "Properties": [
+      {
+        "Category": "Data",
+        "PropertyName": "ContentLanguage",
+        "RuleProviderType": "Unknown"
+      },
       {
         "Category": "Design",
         "PropertyName": "FocusedBorderColor",
@@ -3175,7 +3080,7 @@
       {
         "Category": "Design",
         "PropertyName": "Visible",
-        "RuleProviderType": "User"
+        "RuleProviderType": "Unknown"
       },
       {
         "Category": "Design",
@@ -3248,7 +3153,8 @@
         "InvariantPropertyName": "OnSelect",
         "IsLockable": false,
         "NameMapSourceSchema": "?"
-      }
+      },
+      "ContentLanguage"
     ],
     "DynamicProperties": [
       {
@@ -3286,18 +3192,6 @@
           "RuleProviderType": "Unknown"
         },
         "PropertyName": "LayoutMinHeight"
-      },
-      {
-        "PropertyName": "LayoutX"
-      },
-      {
-        "PropertyName": "LayoutY"
-      },
-      {
-        "PropertyName": "LayoutWidth"
-      },
-      {
-        "PropertyName": "LayoutHeight"
       }
     ],
     "HasDynamicProperties": true,
@@ -3313,6 +3207,11 @@
     "ParentIndex": 1,
     "PersistMetaDataIDKey": false,
     "Properties": [
+      {
+        "Category": "Data",
+        "PropertyName": "ContentLanguage",
+        "RuleProviderType": "Unknown"
+      },
       {
         "Category": "Design",
         "PropertyName": "Icon",
@@ -3476,7 +3375,14 @@
         "IsLockable": false,
         "NameMapSourceSchema": "?"
       },
-      "Fill",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "Fill",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
       "DisabledFill",
       "PressedFill",
       "HoverFill",
@@ -3497,7 +3403,8 @@
       "PaddingTop",
       "PaddingRight",
       "PaddingBottom",
-      "PaddingLeft"
+      "PaddingLeft",
+      "ContentLanguage"
     ],
     "DynamicProperties": [
       {
@@ -3542,18 +3449,6 @@
           "RuleProviderType": "Unknown"
         },
         "PropertyName": "LayoutMinHeight"
-      },
-      {
-        "PropertyName": "LayoutX"
-      },
-      {
-        "PropertyName": "LayoutY"
-      },
-      {
-        "PropertyName": "LayoutWidth"
-      },
-      {
-        "PropertyName": "LayoutHeight"
       }
     ],
     "HasDynamicProperties": true,
@@ -3572,6 +3467,11 @@
       {
         "Category": "Data",
         "PropertyName": "Image",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "ContentLanguage",
         "RuleProviderType": "Unknown"
       },
       {
@@ -3780,7 +3680,8 @@
       "PaddingTop",
       "PaddingRight",
       "PaddingBottom",
-      "PaddingLeft"
+      "PaddingLeft",
+      "ContentLanguage"
     ],
     "DynamicProperties": [
       {
@@ -3818,18 +3719,6 @@
           "RuleProviderType": "Unknown"
         },
         "PropertyName": "LayoutMinHeight"
-      },
-      {
-        "PropertyName": "LayoutX"
-      },
-      {
-        "PropertyName": "LayoutY"
-      },
-      {
-        "PropertyName": "LayoutWidth"
-      },
-      {
-        "PropertyName": "LayoutHeight"
       }
     ],
     "HasDynamicProperties": true,
@@ -3858,6 +3747,11 @@
       {
         "Category": "Data",
         "PropertyName": "Text",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "ContentLanguage",
         "RuleProviderType": "Unknown"
       },
       {
@@ -4107,7 +4001,8 @@
       "PaddingTop",
       "PaddingRight",
       "PaddingBottom",
-      "PaddingLeft"
+      "PaddingLeft",
+      "ContentLanguage"
     ],
     "HasDynamicProperties": false,
     "IsAutoGenerated": false,
@@ -4135,6 +4030,11 @@
       {
         "Category": "Data",
         "PropertyName": "Text",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "ContentLanguage",
         "RuleProviderType": "Unknown"
       },
       {
@@ -4388,7 +4288,8 @@
       "PaddingTop",
       "PaddingRight",
       "PaddingBottom",
-      "PaddingLeft"
+      "PaddingLeft",
+      "ContentLanguage"
     ],
     "DynamicProperties": [
       {
@@ -4426,18 +4327,6 @@
           "RuleProviderType": "Unknown"
         },
         "PropertyName": "LayoutMinHeight"
-      },
-      {
-        "PropertyName": "LayoutX"
-      },
-      {
-        "PropertyName": "LayoutY"
-      },
-      {
-        "PropertyName": "LayoutWidth"
-      },
-      {
-        "PropertyName": "LayoutHeight"
       }
     ],
     "HasDynamicProperties": true,
@@ -4467,6 +4356,11 @@
         "Category": "Data",
         "PropertyName": "Text",
         "RuleProviderType": "User"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "ContentLanguage",
+        "RuleProviderType": "Unknown"
       },
       {
         "Category": "Design",
@@ -4707,7 +4601,8 @@
       "PaddingTop",
       "PaddingRight",
       "PaddingBottom",
-      "PaddingLeft"
+      "PaddingLeft",
+      "ContentLanguage"
     ],
     "DynamicProperties": [
       {
@@ -4745,18 +4640,6 @@
           "RuleProviderType": "Unknown"
         },
         "PropertyName": "LayoutMinHeight"
-      },
-      {
-        "PropertyName": "LayoutX"
-      },
-      {
-        "PropertyName": "LayoutY"
-      },
-      {
-        "PropertyName": "LayoutWidth"
-      },
-      {
-        "PropertyName": "LayoutHeight"
       }
     ],
     "HasDynamicProperties": true,
@@ -4785,6 +4668,11 @@
       {
         "Category": "Data",
         "PropertyName": "Text",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "ContentLanguage",
         "RuleProviderType": "Unknown"
       },
       {
@@ -5026,7 +4914,8 @@
       "PaddingTop",
       "PaddingRight",
       "PaddingBottom",
-      "PaddingLeft"
+      "PaddingLeft",
+      "ContentLanguage"
     ],
     "DynamicProperties": [
       {
@@ -5064,18 +4953,6 @@
           "RuleProviderType": "Unknown"
         },
         "PropertyName": "LayoutMinHeight"
-      },
-      {
-        "PropertyName": "LayoutX"
-      },
-      {
-        "PropertyName": "LayoutY"
-      },
-      {
-        "PropertyName": "LayoutWidth"
-      },
-      {
-        "PropertyName": "LayoutHeight"
       }
     ],
     "HasDynamicProperties": true,
@@ -5104,6 +4981,11 @@
       {
         "Category": "Data",
         "PropertyName": "Text",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "ContentLanguage",
         "RuleProviderType": "Unknown"
       },
       {
@@ -5353,7 +5235,8 @@
         "InvariantPropertyName": "OnSelect",
         "IsLockable": false,
         "NameMapSourceSchema": "?"
-      }
+      },
+      "ContentLanguage"
     ],
     "DynamicProperties": [
       {
@@ -5398,18 +5281,6 @@
           "RuleProviderType": "Unknown"
         },
         "PropertyName": "LayoutMinHeight"
-      },
-      {
-        "PropertyName": "LayoutX"
-      },
-      {
-        "PropertyName": "LayoutY"
-      },
-      {
-        "PropertyName": "LayoutWidth"
-      },
-      {
-        "PropertyName": "LayoutHeight"
       }
     ],
     "HasDynamicProperties": true,
@@ -5438,6 +5309,11 @@
       {
         "Category": "Data",
         "PropertyName": "Text",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "ContentLanguage",
         "RuleProviderType": "Unknown"
       },
       {
@@ -5692,7 +5568,8 @@
         "InvariantPropertyName": "OnSelect",
         "IsLockable": false,
         "NameMapSourceSchema": "?"
-      }
+      },
+      "ContentLanguage"
     ],
     "DynamicProperties": [
       {
@@ -5737,18 +5614,6 @@
           "RuleProviderType": "Unknown"
         },
         "PropertyName": "LayoutMinHeight"
-      },
-      {
-        "PropertyName": "LayoutX"
-      },
-      {
-        "PropertyName": "LayoutY"
-      },
-      {
-        "PropertyName": "LayoutWidth"
-      },
-      {
-        "PropertyName": "LayoutHeight"
       }
     ],
     "HasDynamicProperties": true,
@@ -5777,6 +5642,11 @@
       {
         "Category": "Data",
         "PropertyName": "Live",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "ContentLanguage",
         "RuleProviderType": "Unknown"
       },
       {
@@ -6039,7 +5909,15 @@
       "PaddingRight",
       "PaddingBottom",
       "PaddingLeft",
-      "Visible"
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "If(If(varPolicyMode = \"Create\", galPreBuiltConnectors.Selected.properties.displayName, galPreBuiltConnectors.Selected.name) in [\"Excel Online (Business)\", \"Dynamics 365 Customer Voice\", \"Microsoft Teams\", \"Microsoft To-Do (Business)\", \"Office 365 Groups\", \"Office 365 Outlook\", \"Office 365 Users\", \"OneDrive for Business\", \"OneNote (Business)\", \"Planner\", \"Shifts\", \"SharePoint\", \"Skype for Business Online\", \"Power BI\", \"Yammer\", \"Kaizala\", \"Office 365 Groups Mail (Preview)\", \"Cloud App Security\", \"Approvals\", \"Notifications\", \"Common Data Service\", \"Common Data Service (current environment)\", \"Power Apps Notification\", \"Power Apps Notification v2\"] && ThisItem.classification = \"Blocked\", false, true)",
+        "InvariantPropertyName": "Visible",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
+      "ContentLanguage"
     ],
     "HasDynamicProperties": false,
     "IsAutoGenerated": false,
@@ -6067,6 +5945,11 @@
       {
         "Category": "Data",
         "PropertyName": "Text",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "ContentLanguage",
         "RuleProviderType": "Unknown"
       },
       {
@@ -6247,7 +6130,7 @@
       {
         "Category": "Design",
         "PropertyName": "Visible",
-        "RuleProviderType": "User"
+        "RuleProviderType": "Unknown"
       },
       {
         "Category": "Design",
@@ -6334,18 +6217,6 @@
           "RuleProviderType": "Unknown"
         },
         "PropertyName": "LayoutMinHeight"
-      },
-      {
-        "PropertyName": "LayoutX"
-      },
-      {
-        "PropertyName": "LayoutY"
-      },
-      {
-        "PropertyName": "LayoutWidth"
-      },
-      {
-        "PropertyName": "LayoutHeight"
       }
     ],
     "HasDynamicProperties": true,
@@ -6514,18 +6385,6 @@
           "RuleProviderType": "Unknown"
         },
         "PropertyName": "LayoutMinHeight"
-      },
-      {
-        "PropertyName": "LayoutX"
-      },
-      {
-        "PropertyName": "LayoutY"
-      },
-      {
-        "PropertyName": "LayoutWidth"
-      },
-      {
-        "PropertyName": "LayoutHeight"
       }
     ],
     "HasDynamicProperties": true,
@@ -6663,7 +6522,8 @@
         "InvariantPropertyName": "Visible",
         "IsLockable": false,
         "NameMapSourceSchema": "?"
-      }
+      },
+      "ContentLanguage"
     ],
     "HasDynamicProperties": false,
     "IsAutoGenerated": false,
@@ -6678,6 +6538,11 @@
     "ParentIndex": 2,
     "PersistMetaDataIDKey": false,
     "Properties": [
+      {
+        "Category": "Data",
+        "PropertyName": "ContentLanguage",
+        "RuleProviderType": "Unknown"
+      },
       {
         "Category": "Design",
         "PropertyName": "Fill",
@@ -6838,18 +6703,6 @@
           "RuleProviderType": "Unknown"
         },
         "PropertyName": "LayoutMinHeight"
-      },
-      {
-        "PropertyName": "LayoutX"
-      },
-      {
-        "PropertyName": "LayoutY"
-      },
-      {
-        "PropertyName": "LayoutWidth"
-      },
-      {
-        "PropertyName": "LayoutHeight"
       }
     ],
     "HasDynamicProperties": true,
@@ -7175,7 +7028,8 @@
       "Height",
       "OnSelect",
       "ZIndex",
-      "BorderThickness"
+      "BorderThickness",
+      "ContentLanguage"
     ],
     "HasDynamicProperties": false,
     "IsAutoGenerated": false,
@@ -7190,6 +7044,11 @@
     "ParentIndex": 2,
     "PersistMetaDataIDKey": false,
     "Properties": [
+      {
+        "Category": "Data",
+        "PropertyName": "ContentLanguage",
+        "RuleProviderType": "Unknown"
+      },
       {
         "Category": "Design",
         "PropertyName": "Fill",
@@ -7347,7 +7206,8 @@
         "InvariantPropertyName": "PaddingLeft",
         "IsLockable": false,
         "NameMapSourceSchema": "?"
-      }
+      },
+      "ContentLanguage"
     ],
     "DynamicProperties": [
       {
@@ -7385,18 +7245,6 @@
           "RuleProviderType": "Unknown"
         },
         "PropertyName": "LayoutMinHeight"
-      },
-      {
-        "PropertyName": "LayoutX"
-      },
-      {
-        "PropertyName": "LayoutY"
-      },
-      {
-        "PropertyName": "LayoutWidth"
-      },
-      {
-        "PropertyName": "LayoutHeight"
       }
     ],
     "HasDynamicProperties": true,
@@ -7425,6 +7273,11 @@
       {
         "Category": "Data",
         "PropertyName": "Default",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "ContentLanguage",
         "RuleProviderType": "Unknown"
       },
       {

@@ -1,7 +1,7 @@
 ﻿{
   "properties": {
     "connectionReferences": {
-      "shared_commondataserviceforapps_5": {
+      "shared_commondataserviceforapps": {
         "api": {
           "name": "shared_commondataserviceforapps"
         },
@@ -10,7 +10,7 @@
         },
         "runtimeSource": "embedded"
       },
-      "shared_flowmanagement": {
+      "shared_flowmanagement_1": {
         "api": {
           "name": "shared_flowmanagement"
         },
@@ -19,7 +19,7 @@
         },
         "runtimeSource": "embedded"
       },
-      "shared_office365users": {
+      "shared_office365users_1": {
         "api": {
           "name": "shared_office365users"
         },
@@ -28,12 +28,12 @@
         },
         "runtimeSource": "embedded"
       },
-      "shared_webcontents_1": {
+      "shared_webcontents": {
         "api": {
           "name": "shared_webcontents"
         },
         "connection": {
-          "connectionReferenceLogicalName": "admin_CoECoreHTTPAZUREAD"
+          "connectionReferenceLogicalName": "admin_CoECoreHTTPWithAzureAD"
         },
         "runtimeSource": "embedded"
       }
@@ -67,7 +67,7 @@
                 "authentication": "@parameters('$authentication')",
                 "host": {
                   "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
-                  "connectionName": "shared_commondataserviceforapps_5",
+                  "connectionName": "shared_commondataserviceforapps",
                   "operationId": "CreateRecord"
                 },
                 "parameters": {
@@ -117,7 +117,7 @@
                     "authentication": "@parameters('$authentication')",
                     "host": {
                       "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
-                      "connectionName": "shared_commondataserviceforapps_5",
+                      "connectionName": "shared_commondataserviceforapps",
                       "operationId": "GetItem"
                     },
                     "parameters": {
@@ -218,7 +218,7 @@
                             "authentication": "@parameters('$authentication')",
                             "host": {
                               "apiId": "/providers/Microsoft.PowerApps/apis/shared_flowmanagement",
-                              "connectionName": "shared_flowmanagement",
+                              "connectionName": "shared_flowmanagement_1",
                               "operationId": "AdminGetFlow"
                             },
                             "parameters": {
@@ -238,34 +238,79 @@
                           "actions": {
                             "If_DerivedOwner_is_null,_set_to_Creator": {
                               "actions": {
-                                "Set_FlowOwnerID_to_Creator": {
-                                  "inputs": {
-                                    "name": "FlowOwnerID",
-                                    "value": "@{outputs('Get_Flow_as_Admin')?['body/properties/creator/objectId']}"
-                                  },
-                                  "runAfter": {
-                                    "Update_a_row": [
-                                      "Succeeded"
-                                    ]
-                                  },
-                                  "type": "SetVariable"
-                                },
-                                "Update_a_row": {
+                                "Get_flow_creator": {
                                   "inputs": {
                                     "authentication": "@parameters('$authentication')",
                                     "host": {
-                                      "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
-                                      "connectionName": "shared_commondataserviceforapps_5",
-                                      "operationId": "UpdateRecord"
+                                      "apiId": "/providers/Microsoft.PowerApps/apis/shared_office365users",
+                                      "connectionName": "shared_office365users_1",
+                                      "operationId": "UserProfile_V2"
                                     },
                                     "parameters": {
-                                      "entityName": "admin_flows",
-                                      "item/admin_DerivedOwner@odata.bind": "admin_makers(@{outputs('Get_Flow_as_Admin')?['body/properties/creator/objectId']})",
-                                      "recordId": "@outputs('Get_Flow_from_CoE')?['body/admin_flowid']"
+                                      "$select": "statusCode",
+                                      "id": "@outputs('Get_Flow_as_Admin')?['body/properties/creator/objectId']"
                                     }
                                   },
                                   "runAfter": {},
                                   "type": "OpenApiConnection"
+                                },
+                                "Switch_on_Flow_Creator_Lookup": {
+                                  "cases": {
+                                    "200_Success": {
+                                      "actions": {
+                                        "Set_FlowOwnerID_to_Creator": {
+                                          "inputs": {
+                                            "name": "FlowOwnerID",
+                                            "value": "@outputs('Get_Flow_as_Admin')?['body/properties/creator/objectId']"
+                                          },
+                                          "runAfter": {
+                                            "Update_a_row": [
+                                              "Succeeded"
+                                            ]
+                                          },
+                                          "type": "SetVariable"
+                                        },
+                                        "Update_a_row": {
+                                          "inputs": {
+                                            "authentication": "@parameters('$authentication')",
+                                            "host": {
+                                              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+                                              "connectionName": "shared_commondataserviceforapps",
+                                              "operationId": "UpdateRecord"
+                                            },
+                                            "parameters": {
+                                              "entityName": "admin_flows",
+                                              "item/admin_DerivedOwner@odata.bind": "admin_makers(@{outputs('Get_Flow_as_Admin')?['body/properties/creator/objectId']})",
+                                              "recordId": "@outputs('Get_Flow_from_CoE')?['body/admin_flowid']"
+                                            }
+                                          },
+                                          "runAfter": {},
+                                          "type": "OpenApiConnection"
+                                        }
+                                      },
+                                      "case": 200
+                                    }
+                                  },
+                                  "default": {
+                                    "actions": {
+                                      "Set_FlowOwnerID_to_Creator_2": {
+                                        "inputs": {
+                                          "name": "FlowOwnerID",
+                                          "value": "@outputs('Get_Flow_as_Admin')?['body/properties/creator/objectId']"
+                                        },
+                                        "runAfter": {},
+                                        "type": "SetVariable"
+                                      }
+                                    }
+                                  },
+                                  "expression": "@outputs('Get_flow_creator')['statusCode']",
+                                  "runAfter": {
+                                    "Get_flow_creator": [
+                                      "Succeeded",
+                                      "Failed"
+                                    ]
+                                  },
+                                  "type": "Switch"
                                 }
                               },
                               "expression": {
@@ -455,6 +500,18 @@
                               "runAfter": {},
                               "type": "Select"
                             },
+                            "Select_triggers": {
+                              "inputs": {
+                                "from": "@body('Parse_JSON_2')?['properties']?['definitionSummary']?['triggers']",
+                                "select": "@item()?['kind']"
+                              },
+                              "runAfter": {
+                                "Select": [
+                                  "Succeeded"
+                                ]
+                              },
+                              "type": "Select"
+                            },
                             "add_HTTP_Webhook_edit": {
                               "inputs": "@if(contains(body('Select'), 'HttpWebhook'), ',HTTP Webhook', '')",
                               "runAfter": {
@@ -467,7 +524,16 @@
                             "add_HTTP_edit": {
                               "inputs": "@if(contains(body('Select'), 'Http'), ',HTTP', '')",
                               "runAfter": {
-                                "Select": [
+                                "Select_triggers": [
+                                  "Succeeded"
+                                ]
+                              },
+                              "type": "Compose"
+                            },
+                            "add_HTTP_trigger": {
+                              "inputs": "@if(contains(body('Select_triggers'), 'Http'), ',When a HTTP request is received', '')",
+                              "runAfter": {
+                                "add_HTTP_Webhook_edit": [
                                   "Succeeded"
                                 ]
                               },
@@ -476,7 +542,7 @@
                             "check_if_connection_reference_edit_exist": {
                               "actions": {
                                 "Compose_edit_comma_separated_connector_list": {
-                                  "inputs": "@concat(join(body('Select_Connector_Display_Name_edit'), ','), outputs('add_HTTP_Webhook_edit'), outputs('add_HTTP_edit'))",
+                                  "inputs": "@concat(join(body('Select_Connector_Display_Name_edit'), ','), outputs('add_HTTP_Webhook_edit'), outputs('add_HTTP_edit'), outputs('add_HTTP_trigger'))",
                                   "runAfter": {
                                     "Select_Connector_Display_Name_edit": [
                                       "Succeeded"
@@ -697,7 +763,7 @@
                                 }
                               },
                               "runAfter": {
-                                "add_HTTP_Webhook_edit": [
+                                "add_HTTP_trigger": [
                                   "Succeeded"
                                 ]
                               },
@@ -750,7 +816,7 @@
                                             "authentication": "@parameters('$authentication')",
                                             "host": {
                                               "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
-                                              "connectionName": "shared_commondataserviceforapps_5",
+                                              "connectionName": "shared_commondataserviceforapps",
                                               "operationId": "CreateRecord"
                                             },
                                             "parameters": {
@@ -847,7 +913,7 @@
                                             "authentication": "@parameters('$authentication')",
                                             "host": {
                                               "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
-                                              "connectionName": "shared_commondataserviceforapps_5",
+                                              "connectionName": "shared_commondataserviceforapps",
                                               "operationId": "CreateRecord"
                                             },
                                             "parameters": {
@@ -936,7 +1002,7 @@
                                         "authentication": "@parameters('$authentication')",
                                         "host": {
                                           "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
-                                          "connectionName": "shared_commondataserviceforapps_5",
+                                          "connectionName": "shared_commondataserviceforapps",
                                           "operationId": "UpdateRecord"
                                         },
                                         "parameters": {
@@ -985,7 +1051,7 @@
                                     "authentication": "@parameters('$authentication')",
                                     "host": {
                                       "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
-                                      "connectionName": "shared_commondataserviceforapps_5",
+                                      "connectionName": "shared_commondataserviceforapps",
                                       "operationId": "DeleteRecord"
                                     },
                                     "parameters": {
@@ -1015,7 +1081,7 @@
                                 "authentication": "@parameters('$authentication')",
                                 "host": {
                                   "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
-                                  "connectionName": "shared_commondataserviceforapps_5",
+                                  "connectionName": "shared_commondataserviceforapps",
                                   "operationId": "ListRecords"
                                 },
                                 "parameters": {
@@ -1052,11 +1118,11 @@
                                 "authentication": "@parameters('$authentication')",
                                 "host": {
                                   "apiId": "/providers/Microsoft.PowerApps/apis/shared_office365users",
-                                  "connectionName": "shared_office365users",
+                                  "connectionName": "shared_office365users_1",
                                   "operationId": "UserProfile_V2"
                                 },
                                 "parameters": {
-                                  "$select": "city,country,department,jobTitle,officeLocation,statusCode,userPrincipalName, displayName, id",
+                                  "$select": "city,country,department,jobTitle,officeLocation,statusCode,userPrincipalName, displayName, id, companyName",
                                   "id": "@variables('FlowOwnerID')"
                                 },
                                 "retryPolicy": {
@@ -1077,7 +1143,7 @@
                                         "authentication": "@parameters('$authentication')",
                                         "host": {
                                           "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
-                                          "connectionName": "shared_commondataserviceforapps_5",
+                                          "connectionName": "shared_commondataserviceforapps",
                                           "operationId": "ListRecords"
                                         },
                                         "parameters": {
@@ -1104,7 +1170,7 @@
                                         "authentication": "@parameters('$authentication')",
                                         "host": {
                                           "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
-                                          "connectionName": "shared_commondataserviceforapps_5",
+                                          "connectionName": "shared_commondataserviceforapps",
                                           "operationId": "UpdateRecord"
                                         },
                                         "parameters": {
@@ -1113,6 +1179,7 @@
                                           "item/admin_FlowCreator@odata.bind": "admin_makers(@{body('Get_Flow_as_Admin')?['properties']?['creator']?['objectId']})",
                                           "item/admin_FlowEnvironment@odata.bind": "admin_environments(@{triggerBody()?['admin_environmentid']})",
                                           "item/admin_city": "@body('Get_Flow_Owner_profile')?['city']",
+                                          "item/admin_company": "@outputs('Get_Flow_Owner_profile')?['body/companyName']",
                                           "item/admin_country": "@body('Get_Flow_Owner_profile')?['country']",
                                           "item/admin_department": "@body('Get_Flow_Owner_profile')?['department']",
                                           "item/admin_displayname": "@items('Apply_to_each_Flow')?['properties/displayName']",
@@ -1124,6 +1191,7 @@
                                           "item/admin_flowdescription": "@body('Parse_JSON_2')?['properties']?['definitionSummary']?['description']",
                                           "item/admin_flowenvironmentdisplayname": "@triggerBody()?['admin_displayname']",
                                           "item/admin_flowenvironmentid": "@triggerOutputs()?['body/admin_environmentname']",
+                                          "item/admin_flowidstring": "@items('Apply_to_each_Flow')?['name']",
                                           "item/admin_flowmakerdisplayname": "@body('Get_Flow_Owner_profile')?['displayName']",
                                           "item/admin_flowmodifiedon": "@items('Apply_to_each_Flow')?['properties']?['lastModifiedTime']",
                                           "item/admin_flowstate": "@body('Get_Flow_as_Admin')['properties']['state']",
@@ -1151,12 +1219,13 @@
                                             "authentication": "@parameters('$authentication')",
                                             "host": {
                                               "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
-                                              "connectionName": "shared_commondataserviceforapps_5",
+                                              "connectionName": "shared_commondataserviceforapps",
                                               "operationId": "UpdateRecord"
                                             },
                                             "parameters": {
                                               "entityName": "admin_makers",
                                               "item/admin_city": "@outputs('Get_Flow_Owner_profile')?['body/city']",
+                                              "item/admin_company": "@outputs('Get_Flow_Owner_profile')?['body/companyName']",
                                               "item/admin_country": "@outputs('Get_Flow_Owner_profile')?['body/country']",
                                               "item/admin_department": "@outputs('Get_Flow_Owner_profile')?['body/department']",
                                               "item/admin_displayname": "@outputs('Get_Flow_Owner_profile')?['body/displayName']",
@@ -1183,12 +1252,13 @@
                                               "authentication": "@parameters('$authentication')",
                                               "host": {
                                                 "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
-                                                "connectionName": "shared_commondataserviceforapps_5",
+                                                "connectionName": "shared_commondataserviceforapps",
                                                 "operationId": "CreateRecord"
                                               },
                                               "parameters": {
                                                 "entityName": "admin_makers",
                                                 "item/admin_city": "@outputs('Get_Flow_Owner_profile')?['body/city']",
+                                                "item/admin_company": "@outputs('Get_Flow_Owner_profile')?['body/companyName']",
                                                 "item/admin_country": "@outputs('Get_Flow_Owner_profile')?['body/country']",
                                                 "item/admin_department": "@outputs('Get_Flow_Owner_profile')?['body/department']",
                                                 "item/admin_displayname": "@outputs('Get_Flow_Owner_profile')?['body/displayName']",
@@ -1232,7 +1302,7 @@
                                         "authentication": "@parameters('$authentication')",
                                         "host": {
                                           "apiId": "/providers/Microsoft.PowerApps/apis/shared_webcontents",
-                                          "connectionName": "shared_webcontents_1",
+                                          "connectionName": "shared_webcontents",
                                           "operationId": "InvokeHttp"
                                         },
                                         "parameters": {
@@ -1252,7 +1322,7 @@
                                                 "authentication": "@parameters('$authentication')",
                                                 "host": {
                                                   "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
-                                                  "connectionName": "shared_commondataserviceforapps_5",
+                                                  "connectionName": "shared_commondataserviceforapps",
                                                   "operationId": "UpdateRecord"
                                                 },
                                                 "parameters": {
@@ -1267,6 +1337,7 @@
                                                   "item/admin_flowdescription": "@body('Parse_JSON_2')?['properties']?['definitionSummary']?['description']",
                                                   "item/admin_flowenvironmentdisplayname": "@triggerBody()?['admin_displayname']",
                                                   "item/admin_flowenvironmentid": "@triggerOutputs()?['body/admin_environmentname']",
+                                                  "item/admin_flowidstring": "@items('Apply_to_each_Flow')?['name']",
                                                   "item/admin_flowmodifiedon": "@items('Apply_to_each_Flow')?['properties']?['lastModifiedTime']",
                                                   "item/admin_flowstate": "@body('Get_Flow_as_Admin')['properties']['state']",
                                                   "item/admin_workflowentityid": "@body('Parse_JSON_2')?['properties']?['workflowEntityId']",
@@ -1292,7 +1363,7 @@
                                                 "authentication": "@parameters('$authentication')",
                                                 "host": {
                                                   "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
-                                                  "connectionName": "shared_commondataserviceforapps_5",
+                                                  "connectionName": "shared_commondataserviceforapps",
                                                   "operationId": "ListRecords"
                                                 },
                                                 "parameters": {
@@ -1309,7 +1380,7 @@
                                                 "authentication": "@parameters('$authentication')",
                                                 "host": {
                                                   "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
-                                                  "connectionName": "shared_commondataserviceforapps_5",
+                                                  "connectionName": "shared_commondataserviceforapps",
                                                   "operationId": "UpdateRecord"
                                                 },
                                                 "parameters": {
@@ -1326,6 +1397,7 @@
                                                   "item/admin_flowdescription": "@body('Parse_JSON_2')?['properties']?['definitionSummary']?['description']",
                                                   "item/admin_flowenvironmentdisplayname": "@triggerBody()?['admin_displayname']",
                                                   "item/admin_flowenvironmentid": "@triggerOutputs()?['body/admin_environmentname']",
+                                                  "item/admin_flowidstring": "@items('Apply_to_each_Flow')?['name']",
                                                   "item/admin_flowmakerdisplayname": "@outputs('Look_up_in_AD_for_Service_Principles_Editted_Flow')?['body']?['appDisplayName']",
                                                   "item/admin_flowmodifiedon": "@items('Apply_to_each_Flow')?['properties']?['lastModifiedTime']",
                                                   "item/admin_flowstate": "@body('Get_Flow_as_Admin')['properties']['state']",
@@ -1348,7 +1420,7 @@
                                                     "authentication": "@parameters('$authentication')",
                                                     "host": {
                                                       "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
-                                                      "connectionName": "shared_commondataserviceforapps_5",
+                                                      "connectionName": "shared_commondataserviceforapps",
                                                       "operationId": "UpdateRecord"
                                                     },
                                                     "parameters": {
@@ -1371,7 +1443,7 @@
                                                       "authentication": "@parameters('$authentication')",
                                                       "host": {
                                                         "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
-                                                        "connectionName": "shared_commondataserviceforapps_5",
+                                                        "connectionName": "shared_commondataserviceforapps",
                                                         "operationId": "CreateRecord"
                                                       },
                                                       "parameters": {
@@ -1446,8 +1518,8 @@
                         "or": [
                           {
                             "equals": [
-                              "@parameters('FullInventory')",
-                              "@true"
+                              "@variables('fullinventory')",
+                              "True"
                             ]
                           },
                           {
@@ -1480,7 +1552,7 @@
                           "authentication": "@parameters('$authentication')",
                           "host": {
                             "apiId": "/providers/Microsoft.PowerApps/apis/shared_flowmanagement",
-                            "connectionName": "shared_flowmanagement",
+                            "connectionName": "shared_flowmanagement_1",
                             "operationId": "AdminGetFlow"
                           },
                           "parameters": {
@@ -1503,11 +1575,11 @@
                               "authentication": "@parameters('$authentication')",
                               "host": {
                                 "apiId": "/providers/Microsoft.PowerApps/apis/shared_office365users",
-                                "connectionName": "shared_office365users",
+                                "connectionName": "shared_office365users_1",
                                 "operationId": "UserProfile_V2"
                               },
                               "parameters": {
-                                "$select": "city,country,department,jobTitle,officeLocation,statusCode,userPrincipalName, displayName, id",
+                                "$select": "city,country,department,jobTitle,officeLocation,statusCode,userPrincipalName, displayName, id, companyName",
                                 "id": "@outputs('Get_New_Flow_as_Admin')?['body/properties/creator/objectId']"
                               },
                               "retryPolicy": {
@@ -1528,7 +1600,7 @@
                                       "authentication": "@parameters('$authentication')",
                                       "host": {
                                         "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
-                                        "connectionName": "shared_commondataserviceforapps_5",
+                                        "connectionName": "shared_commondataserviceforapps",
                                         "operationId": "ListRecords"
                                       },
                                       "parameters": {
@@ -1550,7 +1622,7 @@
                                       "authentication": "@parameters('$authentication')",
                                       "host": {
                                         "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
-                                        "connectionName": "shared_commondataserviceforapps_5",
+                                        "connectionName": "shared_commondataserviceforapps",
                                         "operationId": "CreateRecord"
                                       },
                                       "parameters": {
@@ -1559,6 +1631,7 @@
                                         "item/admin_FlowCreator@odata.bind": "admin_makers(@{outputs('Get_New_Flow_as_Admin')?['body/properties/creator/objectId']})",
                                         "item/admin_FlowEnvironment@odata.bind": "admin_environments(@{triggerBody()?['admin_environmentid']})",
                                         "item/admin_city": "@outputs('Get_New_Flow_Creator_profile')?['body/city']",
+                                        "item/admin_company": "@outputs('Get_New_Flow_Creator_profile')?['body/companyName']",
                                         "item/admin_country": "@outputs('Get_New_Flow_Creator_profile')?['body/country']",
                                         "item/admin_department": "@outputs('Get_New_Flow_Creator_profile')?['body/department']",
                                         "item/admin_displayname": "@outputs('Get_New_Flow_as_Admin')?['body/properties/displayName']",
@@ -1572,6 +1645,7 @@
                                         "item/admin_flowenvironmentid": "@triggerOutputs()?['body/admin_environmentname']",
                                         "item/admin_flowexcusedfromarchival": false,
                                         "item/admin_flowid": "@outputs('Get_New_Flow_as_Admin')?['body/name']",
+                                        "item/admin_flowidstring": "@outputs('Get_New_Flow_as_Admin')?['body/name']",
                                         "item/admin_flowmakerdisplayname": "@outputs('Get_New_Flow_Creator_profile')?['body/displayName']",
                                         "item/admin_flowmodifiedon": "@outputs('Get_New_Flow_as_Admin')?['body/properties/lastModifiedTime']",
                                         "item/admin_flowstate": "@outputs('Get_New_Flow_as_Admin')?['body/properties/state']",
@@ -1598,12 +1672,13 @@
                                           "authentication": "@parameters('$authentication')",
                                           "host": {
                                             "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
-                                            "connectionName": "shared_commondataserviceforapps_5",
+                                            "connectionName": "shared_commondataserviceforapps",
                                             "operationId": "UpdateRecord"
                                           },
                                           "parameters": {
                                             "entityName": "admin_makers",
                                             "item/admin_city": "@outputs('Get_New_Flow_Creator_profile')?['body/city']",
+                                            "item/admin_company": "@outputs('Get_New_Flow_Creator_profile')?['body/companyName']",
                                             "item/admin_country": "@outputs('Get_New_Flow_Creator_profile')?['body/country']",
                                             "item/admin_department": "@outputs('Get_New_Flow_Creator_profile')?['body/department']",
                                             "item/admin_displayname": "@outputs('Get_New_Flow_Creator_profile')?['body/displayName']",
@@ -1631,12 +1706,13 @@
                                             "authentication": "@parameters('$authentication')",
                                             "host": {
                                               "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
-                                              "connectionName": "shared_commondataserviceforapps_5",
+                                              "connectionName": "shared_commondataserviceforapps",
                                               "operationId": "CreateRecord"
                                             },
                                             "parameters": {
                                               "entityName": "admin_makers",
                                               "item/admin_city": "@outputs('Get_New_Flow_Creator_profile')?['body/city']",
+                                              "item/admin_company": "@outputs('Get_New_Flow_Creator_profile')?['body/companyName']",
                                               "item/admin_country": "@outputs('Get_New_Flow_Creator_profile')?['body/country']",
                                               "item/admin_department": "@outputs('Get_New_Flow_Creator_profile')?['body/department']",
                                               "item/admin_displayname": "@outputs('Get_New_Flow_Creator_profile')?['body/displayName']",
@@ -1681,7 +1757,7 @@
                                       "authentication": "@parameters('$authentication')",
                                       "host": {
                                         "apiId": "/providers/Microsoft.PowerApps/apis/shared_webcontents",
-                                        "connectionName": "shared_webcontents_1",
+                                        "connectionName": "shared_webcontents",
                                         "operationId": "InvokeHttp"
                                       },
                                       "parameters": {
@@ -1701,7 +1777,7 @@
                                               "authentication": "@parameters('$authentication')",
                                               "host": {
                                                 "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
-                                                "connectionName": "shared_commondataserviceforapps_5",
+                                                "connectionName": "shared_commondataserviceforapps",
                                                 "operationId": "ListRecords"
                                               },
                                               "parameters": {
@@ -1718,7 +1794,7 @@
                                               "authentication": "@parameters('$authentication')",
                                               "host": {
                                                 "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
-                                                "connectionName": "shared_commondataserviceforapps_5",
+                                                "connectionName": "shared_commondataserviceforapps",
                                                 "operationId": "CreateRecord"
                                               },
                                               "parameters": {
@@ -1737,6 +1813,7 @@
                                                 "item/admin_flowenvironmentid": "@triggerOutputs()?['body/admin_environmentname']",
                                                 "item/admin_flowexcusedfromarchival": false,
                                                 "item/admin_flowid": "@outputs('Get_New_Flow_as_Admin')?['body/name']",
+                                                "item/admin_flowidstring": "@outputs('Get_New_Flow_as_Admin')?['body/name']",
                                                 "item/admin_flowmakerdisplayname": "@outputs('Look_up_in_AD_for_Service_Principles_New_Flow')?['body']?['appDisplayName']",
                                                 "item/admin_flowmodifiedon": "@outputs('Get_New_Flow_as_Admin')?['body/properties/lastModifiedTime']",
                                                 "item/admin_flowstate": "@outputs('Get_New_Flow_as_Admin')?['body/properties/state']",
@@ -1758,7 +1835,7 @@
                                                   "authentication": "@parameters('$authentication')",
                                                   "host": {
                                                     "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
-                                                    "connectionName": "shared_commondataserviceforapps_5",
+                                                    "connectionName": "shared_commondataserviceforapps",
                                                     "operationId": "UpdateRecord"
                                                   },
                                                   "parameters": {
@@ -1781,7 +1858,7 @@
                                                     "authentication": "@parameters('$authentication')",
                                                     "host": {
                                                       "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
-                                                      "connectionName": "shared_commondataserviceforapps_5",
+                                                      "connectionName": "shared_commondataserviceforapps",
                                                       "operationId": "CreateRecord"
                                                     },
                                                     "parameters": {
@@ -1821,7 +1898,7 @@
                                               "authentication": "@parameters('$authentication')",
                                               "host": {
                                                 "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
-                                                "connectionName": "shared_commondataserviceforapps_5",
+                                                "connectionName": "shared_commondataserviceforapps",
                                                 "operationId": "CreateRecord"
                                               },
                                               "parameters": {
@@ -1838,6 +1915,7 @@
                                                 "item/admin_flowenvironmentid": "@triggerOutputs()?['body/admin_environmentname']",
                                                 "item/admin_flowexcusedfromarchival": false,
                                                 "item/admin_flowid": "@outputs('Get_New_Flow_as_Admin')?['body/name']",
+                                                "item/admin_flowidstring": "@outputs('Get_New_Flow_as_Admin')?['body/name']",
                                                 "item/admin_flowmodifiedon": "@outputs('Get_New_Flow_as_Admin')?['body/properties/lastModifiedTime']",
                                                 "item/admin_flowstate": "@outputs('Get_New_Flow_as_Admin')?['body/properties/state']",
                                                 "item/admin_workflowentityid": "@body('Parse_New_Flow_JSON')?['properties']?['workflowEntityId']",
@@ -2042,15 +2120,27 @@
                       "Prepare_Connection_Information_new": {
                         "actions": {
                           "Add_HTTP": {
+                            "description": "if(contains(body('Select_2'), 'Http'), ',HTTP', '')",
                             "inputs": "@if(contains(body('Select_2'), 'Http'), ',HTTP', '')",
                             "runAfter": {
-                              "Select_2": [
+                              "Select_3": [
+                                "Succeeded"
+                              ]
+                            },
+                            "type": "Compose"
+                          },
+                          "Add_HTTP_Request": {
+                            "description": "if(contains(body('Select_3'), 'Http'), ',HTTP Request', '')",
+                            "inputs": "@if(contains(body('Select_3'), 'Http'), ',When a HTTP request is received', '')",
+                            "runAfter": {
+                              "Add_HTTP_Webhook": [
                                 "Succeeded"
                               ]
                             },
                             "type": "Compose"
                           },
                           "Add_HTTP_Webhook": {
+                            "description": "if(contains(body('Select_2'), 'HttpWebhook'), ',HTTP Webhook', '')",
                             "inputs": "@if(contains(body('Select_2'), 'HttpWebhook'), ',HTTP Webhook', '')",
                             "runAfter": {
                               "Add_HTTP": [
@@ -2067,10 +2157,22 @@
                             "runAfter": {},
                             "type": "Select"
                           },
+                          "Select_3": {
+                            "inputs": {
+                              "from": "@body('Parse_New_Flow_JSON')?['properties']?['definitionSummary']?['triggers']",
+                              "select": "@item()?['kind']"
+                            },
+                            "runAfter": {
+                              "Select_2": [
+                                "Succeeded"
+                              ]
+                            },
+                            "type": "Select"
+                          },
                           "check_if_connection_reference_new_exist": {
                             "actions": {
                               "Compose_new_comma_separated_connector_list": {
-                                "inputs": "@concat(join(body('Select_new_connector_display_name'), ','), outputs('Add_HTTP_Webhook'), outputs('Add_HTTP'))",
+                                "inputs": "@concat(join(body('Select_new_connector_display_name'), ','), outputs('Add_HTTP_Webhook'), outputs('Add_HTTP'), outputs('Add_HTTP_Request'))",
                                 "runAfter": {
                                   "Select_new_connector_display_name": [
                                     "Succeeded"
@@ -2291,7 +2393,7 @@
                               }
                             },
                             "runAfter": {
-                              "Add_HTTP_Webhook": [
+                              "Add_HTTP_Request": [
                                 "Succeeded"
                               ]
                             },
@@ -2344,7 +2446,7 @@
                                           "authentication": "@parameters('$authentication')",
                                           "host": {
                                             "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
-                                            "connectionName": "shared_commondataserviceforapps_5",
+                                            "connectionName": "shared_commondataserviceforapps",
                                             "operationId": "CreateRecord"
                                           },
                                           "parameters": {
@@ -2441,7 +2543,7 @@
                                           "authentication": "@parameters('$authentication')",
                                           "host": {
                                             "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
-                                            "connectionName": "shared_commondataserviceforapps_5",
+                                            "connectionName": "shared_commondataserviceforapps",
                                             "operationId": "CreateRecord"
                                           },
                                           "parameters": {
@@ -2530,7 +2632,7 @@
                                       "authentication": "@parameters('$authentication')",
                                       "host": {
                                         "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
-                                        "connectionName": "shared_commondataserviceforapps_5",
+                                        "connectionName": "shared_commondataserviceforapps",
                                         "operationId": "UpdateRecord"
                                       },
                                       "parameters": {
@@ -2579,7 +2681,7 @@
                                   "authentication": "@parameters('$authentication')",
                                   "host": {
                                     "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
-                                    "connectionName": "shared_commondataserviceforapps_5",
+                                    "connectionName": "shared_commondataserviceforapps",
                                     "operationId": "DeleteRecord"
                                   },
                                   "parameters": {
@@ -2609,7 +2711,7 @@
                               "authentication": "@parameters('$authentication')",
                               "host": {
                                 "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
-                                "connectionName": "shared_commondataserviceforapps_5",
+                                "connectionName": "shared_commondataserviceforapps",
                                 "operationId": "ListRecords"
                               },
                               "parameters": {
@@ -2681,7 +2783,7 @@
                 "authentication": "@parameters('$authentication')",
                 "host": {
                   "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
-                  "connectionName": "shared_commondataserviceforapps_5",
+                  "connectionName": "shared_commondataserviceforapps",
                   "operationId": "ListRecords"
                 },
                 "parameters": {
@@ -2707,7 +2809,7 @@
                 "authentication": "@parameters('$authentication')",
                 "host": {
                   "apiId": "/providers/Microsoft.PowerApps/apis/shared_flowmanagement",
-                  "connectionName": "shared_flowmanagement",
+                  "connectionName": "shared_flowmanagement_1",
                   "operationId": "ListFlowsInEnvironment"
                 },
                 "parameters": {
@@ -2823,6 +2925,23 @@
           },
           "type": "InitializeVariable"
         },
+        "Initialize_variable_fullinventory": {
+          "inputs": {
+            "variables": [
+              {
+                "name": "fullinventory",
+                "type": "string",
+                "value": "@{parameters('FullInventory')}"
+              }
+            ]
+          },
+          "runAfter": {
+            "Check_if_Environment_Deleted,_terminate_if_true": [
+              "Succeeded"
+            ]
+          },
+          "type": "InitializeVariable"
+        },
         "Initialize_variable_isNewToCoE": {
           "inputs": {
             "variables": [
@@ -2834,7 +2953,7 @@
             ]
           },
           "runAfter": {
-            "Check_if_Environment_Deleted,_terminate_if_true": [
+            "Initialize_variable_fullinventory": [
               "Succeeded"
             ]
           },
@@ -2880,7 +2999,7 @@
         "Power Automate Environment Variable": {
           "defaultValue": "https://us.flow.microsoft.com/manage/environments/",
           "metadata": {
-            "description": "Environment, including geographic location, for Power Automate - for example https://us.flow.microsoft.com/manage/environments/ for US environments",
+            "description": "Environment, including geographic location, for Power Automate - Ex for US: https://us.flow.microsoft.com/manage/environments/",
             "schemaName": "admin_PowerAutomateEnvironmentVariable"
           },
           "type": "String"
@@ -2892,7 +3011,7 @@
             "authentication": "@parameters('$authentication')",
             "host": {
               "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
-              "connectionName": "shared_commondataserviceforapps_5",
+              "connectionName": "shared_commondataserviceforapps",
               "operationId": "SubscribeWebhookTrigger"
             },
             "parameters": {

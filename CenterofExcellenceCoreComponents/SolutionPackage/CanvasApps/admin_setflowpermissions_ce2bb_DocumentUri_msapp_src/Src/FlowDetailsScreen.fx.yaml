@@ -9,6 +9,13 @@ FlowDetailsScreen As screen:
             ).value
         );
         
+        ForAll(flowRoles, If(And(CountRows(Filter(theMakers, theMakerID=properties.principal.id))<1, properties.principal.type="User"), 
+           Collect( theMakers, {
+            theMakerID: properties.principal.id,
+            theMakerPicture: Office365Users.UserPhotoV2(properties.principal.id), 
+            theMakerName: Office365Users.UserProfileV2(properties.principal.id).displayName,
+            theMakerEmail: Office365Users.UserProfileV2(properties.principal.id).userPrincipalName})));
+        
         UpdateContext(
             {
                 showEmailUsers: false,
@@ -29,7 +36,6 @@ FlowDetailsScreen As screen:
         Height: =703
         HoverBorderColor: =galFlowRoles.BorderColor
         HoverFill: =galFlowRoles.Fill
-        ItemAccessibleLabel: =""
         Items: =flowRoles
         Layout: =Layout.Vertical
         LoadingSpinnerColor: =galFlowRoles.BorderColor
@@ -57,7 +63,7 @@ FlowDetailsScreen As screen:
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedColor: =RGBA(4,45,81,1.00)
             PressedFill: =RGBA(0, 0, 0, 0)
-            Text: =If(ThisItem.properties.principal.type="Group", ThisItem.properties.principal.type, LookUp(theMakers, theMakerID=GUID(ThisItem.properties.principal.id)).theMakerName)
+            Text: =If(ThisItem.properties.principal.type="Group", ThisItem.properties.principal.type, LookUp(theMakers, theMakerID=ThisItem.properties.principal.id).theMakerName)
             Width: =333
             X: =98
             ZIndex: =1
@@ -71,7 +77,7 @@ FlowDetailsScreen As screen:
             Height: =60
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverFill: =RGBA(0, 0, 0, 0)
-            Image: =If(ThisItem.properties.principal.type <> "User", SampleImage,  LookUp(theMakers, theMakerID=GUID(ThisItem.properties.principal.id)).theMakerPicture)
+            Image: =If(ThisItem.properties.principal.type <> "User", SampleImage,  LookUp(theMakers, theMakerID=ThisItem.properties.principal.id).theMakerPicture)
             ImagePosition: =ImagePosition.Fill
             OnSelect: =Select(Parent)
             PaddingBottom: =imgUserProfile.PaddingTop
@@ -137,7 +143,6 @@ FlowDetailsScreen As screen:
             RadiusTopRight: =0
             Size: =14
             Text: ="Make Owner"
-            Tooltip: =""
             Visible: |-
                 =//only visible to type role type "CanEdit" who is not already the DerivedFlowOwner
                 If(ThisItem.properties.principal.id=FlowDerivedOwner || ThisItem.properties.roleName="CanView" || ThisItem.properties.principal.type <> "User", false, true)
@@ -377,7 +382,6 @@ FlowDetailsScreen As screen:
         ZIndex: =6
 
     bkgOptionBar As rectangle:
-        AccessibleLabel: =""
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         DisabledFill: =RGBA(166, 166, 166, 1)
@@ -389,7 +393,6 @@ FlowDetailsScreen As screen:
         OnSelect: =
         PressedFill: =bkgOptionBar.Fill
         TabIndex: =0
-        Tooltip: =""
         Width: =1920
         X: =
         ZIndex: =11
@@ -425,7 +428,7 @@ FlowDetailsScreen As screen:
                     Fade
                 ),
                 1,
-                Launch(settings.'Flow Maker URL' & "/manage/environments/" & SelectedFlow.'Flow Environment'.Name & "/flows/" & SelectedFlow.Flow & "/details"),
+                Launch(theFlowURL & SelectedFlow.'Flow Environment'.Name & "/flows/" & SelectedFlow.Flow & "/details"),
                 4,
                 UpdateContext({showEmailUsers: true}),
                 5,
@@ -707,26 +710,6 @@ FlowDetailsScreen As screen:
             Y: =146
             ZIndex: =10
 
-    Icon1_4 As icon.Warning:
-        Color: =RGBA(255, 0, 0, 1)
-        DisabledFill: =Icon1_4.Fill
-        Height: =80
-        HoverBorderColor: =ColorFade(Icon1_4.BorderColor, 20%)
-        HoverColor: =ColorFade(Icon1_4.Color, 20%)
-        HoverFill: =Icon1_4.Fill
-        Icon: =Icon.Warning
-        OnSelect: =
-        PressedBorderColor: =ColorFade(Icon1_4.BorderColor, -20%)
-        PressedColor: =ColorFade(Icon1_4.Color, -20%)
-        PressedFill: =Icon1_4.Fill
-        TabIndex: ="Solution Flows cannot yet have their permissions edited programatically"
-        Tooltip: ="Flows in Solutions cannot yet have their permissions edited programmatically"
-        Visible: =If(IsBlankOrError(SelectedFlow.WorkflowEntityId), false, true)
-        Width: =68
-        X: =1799
-        Y: =83
-        ZIndex: =38
-
     Label3 As label:
         Align: =Center
         Fill: =RGBA(244, 244, 244, 1)
@@ -837,7 +820,7 @@ FlowDetailsScreen As screen:
 
             Label1 As label:
                 OnSelect: =Select(Parent)
-                Text: =LookUp(theMakers, theMakerID=GUID(ThisItem.properties.principal.id)).'Display Name'
+                Text: =LookUp(theMakers, theMakerID=ThisItem.properties.principal.id).theMakerName
                 X: =12
                 Y: =9
                 ZIndex: =1
@@ -869,7 +852,6 @@ FlowDetailsScreen As screen:
             ZIndex: =30
 
         txtEmailSubject As text:
-            AccessibleLabel: =""
             BorderColor: =RGBA(230, 230, 230, 1)
             BorderThickness: =1
             Color: =RGBA(51, 51, 51, 1)
@@ -930,7 +912,7 @@ FlowDetailsScreen As screen:
                         flowRoles, properties.principal.type <> "Tenant"
                     ),
                     Office365.SendEmailV2(
-                        LookUp(theMakers, theMakerID=GUID(properties.principal.id)).theMakerEmail,
+                        LookUp(theMakers, theMakerID=properties.principal.id).theMakerEmail,
                         galFlows.Selected.'Display Name',
                         txtEmailMessage.HtmlText,
                         {Importance: "Normal"}
@@ -1039,7 +1021,6 @@ FlowDetailsScreen As screen:
             ZIndex: =17
 
         txtSearchUser As text:
-            AccessibleLabel: =""
             Align: =Center
             BorderColor: =RGBA(220,220,220,1)
             BorderThickness: =1
@@ -1076,7 +1057,6 @@ FlowDetailsScreen As screen:
             ZIndex: =18
 
         galSearchPeopleresult As gallery.galleryVertical:
-            AccessibleLabel: =""
             BorderColor: =RGBA(233, 232, 233, 1)
             BorderStyle: =BorderStyle.None
             DisabledBorderColor: =galSearchPeopleresult.BorderColor
@@ -1084,7 +1064,6 @@ FlowDetailsScreen As screen:
             Height: =476
             HoverBorderColor: =galSearchPeopleresult.BorderColor
             HoverFill: =galSearchPeopleresult.Fill
-            ItemAccessibleLabel: =""
             Items: =If(Len(txtSearchUser.Text) > 3,searchResultsCol)
             Layout: =Layout.Vertical
             LoadingSpinnerColor: =galSearchPeopleresult.BorderColor
@@ -1100,7 +1079,6 @@ FlowDetailsScreen As screen:
             ZIndex: =19
 
             imgSearchProfilePic As image:
-                AccessibleLabel: =""
                 ApplyEXIFOrientation: =false
                 BorderColor: =RGBA(101, 128, 187, 1)
                 DisabledBorderColor: =RGBA(159, 167, 165, 1)
@@ -1120,7 +1098,6 @@ FlowDetailsScreen As screen:
                 RadiusTopLeft: =40
                 RadiusTopRight: =40
                 TabIndex: =0
-                Tooltip: =""
                 Width: =80
                 X: =5
                 Y: =27
@@ -1181,7 +1158,6 @@ FlowDetailsScreen As screen:
                 ZIndex: =10
 
         iSearch As icon.Search:
-            AccessibleLabel: =""
             BorderColor: =RGBA(101, 128, 187, 1)
             Color: =RGBA(220,220,220,1)
             DisabledBorderColor: =RGBA(159, 167, 165, 1)
@@ -1200,7 +1176,6 @@ FlowDetailsScreen As screen:
             PressedBorderColor: =ColorFade(iSearch.BorderColor, -20%)
             PressedColor: =ColorFade(iSearch.Color, -20%)
             PressedFill: =iSearch.Fill
-            Tooltip: =""
             Visible: =showAddUsers
             Width: =50
             X: =407
@@ -1229,7 +1204,6 @@ FlowDetailsScreen As screen:
             ZIndex: =21
 
         imgClearInput As image:
-            AccessibleLabel: =""
             ApplyEXIFOrientation: =false
             BorderColor: =RGBA(101, 128, 187, 1)
             DisabledBorderColor: =RGBA(159, 167, 165, 1)

@@ -149,7 +149,7 @@ AssessmentScreen As screen:
         Height: =125
         HoverBorderColor: =galNavigation.BorderColor
         HoverFill: =galNavigation.Fill
-        Items: =colNavSteps
+        Items: =SortByColumns(colNavSteps, "itemnumber")
         OnSelect: |-
             =UpdateContext({selectedValue: ThisItem});
             Patch(colNavSteps, ThisItem, {IsComplete: true})
@@ -278,7 +278,6 @@ AssessmentScreen As screen:
         ZIndex: =11
 
     bkgAssessmentHeader As rectangle:
-        AccessibleLabel: =""
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         DisabledFill: =RGBA(166, 166, 166, 1)
@@ -290,7 +289,6 @@ AssessmentScreen As screen:
         OnSelect: =
         PressedFill: =bkgAssessmentHeader.Fill
         TabIndex: =0
-        Tooltip: =""
         Width: =Parent.Width
         X: =0.00
         Y: =64

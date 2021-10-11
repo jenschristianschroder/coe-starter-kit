@@ -1,4 +1,6 @@
-# ALM Accelerator for Advanced Makers
+# ALM Accelerator for Advanced Makers (Preview)
+
+> [!NOTE] ALM Accelerator for Advanced Makers is currently in public preview. Please see Issues currently tagged as [vnext](https://github.com/microsoft/coe-starter-kit/issues?q=is%3Aopen+is%3Aissue+label%3Aalm-accelerator+label%3Avnext) for the Roadmap to be completed prior to general availability. While in Public Preview it can be expected that there will be breaking changes and frequent updates to address feedback from preview members. Additionally, the Public Preview is reliant on the experimental [Power Apps Source File Pack and Unpack Utility](https://github.com/microsoft/PowerApps-Language-Tooling) that is being developed separately from AA4AM.
 
 ## Introduction
 
@@ -83,4 +85,7 @@ The AA4AM Canvas App provides a convenience layer on top of the AA4AM Pipelines 
 [![ALM Accelerator for Advanced Makers Overview Video](http://img.youtube.com/vi/-P3uSUTdsSY/0.jpg)](http://www.youtube.com/watch?v=-P3uSUTdsSY "ALM Accelerator for Advanced Makers Overview Video")
 
 ## ALM Accelerator for Advanced Makers Setup Guide
-To get started setting up ALM Accelerator For Advanced Makers Pipelines and the App go here [Setupguide.md](SETUPGUIDE.md)
+To get started with the ALM Accelerator For Advanced Makers you can
+
+1. (**Recommended**) Use the CoE CLI to automate the install at https://github.com/microsoft/coe-starter-kit/blob/main/coe-cli/docs/aa4am/readme.md or in the [Power Platform CoE CLI E-Book](https://aka.ms/coe-cli-ebook)
+1. Use the manual setup documentation can be found at https://github.com/microsoft/coe-starter-kit/blob/main/ALMAcceleratorForAdvancedMakers/SETUPGUIDE.md

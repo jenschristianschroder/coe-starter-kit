@@ -20,5 +20,18 @@
     "TemplateId": "dynamichosturl",
     "Title": "Set host to https://app.vssps.visualstudio.com",
     "Type": null
+  },
+  {
+    "Parameters": {
+      "x-ms-apimTemplate-policySection": "Response",
+      "x-ms-apimTemplateParameter.keyName": "key",
+      "x-ms-apimTemplateParameter.newPropertyPath": "@item().variables",
+      "x-ms-apimTemplateParameter.propertyParentPath": "@body().value",
+      "x-ms-apimTemplateParameter.propertySubPath": "variables",
+      "x-ms-apimTemplateParameter.valueName": "value"
+    },
+    "TemplateId": "convertobjecttoarray",
+    "Title": "Convert Build Definition Variables to Array",
+    "Type": null
   }
 ]

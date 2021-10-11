@@ -1,0 +1,19 @@
+﻿[
+  {
+    "Parameters": {
+      "x-ms-apimTemplateParameter.urlTemplate": "@headers('hostUrl')"
+    },
+    "TemplateId": "dynamichosturl",
+    "Title": "Set host URL",
+    "Type": null
+  },
+  {
+    "Parameters": {
+      "x-ms-apimTemplateParameter.httpMethod": "@Request.OriginalHTTPMethod",
+      "x-ms-apimTemplateParameter.newPath": "/@headers('baseUrl')/GetResponse"
+    },
+    "TemplateId": "routerequesttoendpoint",
+    "Title": "Route GetResponse request",
+    "Type": null
+  }
+]
